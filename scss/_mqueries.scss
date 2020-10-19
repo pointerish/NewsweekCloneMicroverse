@@ -1,0 +1,19 @@
+@media screen and (min-width: $big-screen-width) {
+  .burger-menu {
+    display: none;      
+  }
+}
+
+@media screen and (min-width: $tablet-width) and (max-width: $big-screen-width) {
+  .bottom-nav,
+  .weather-date {
+    display: none;
+  }
+}
+
+@media screen and (min-width: $mobile-width) and (max-width: $tablet-width) {
+  .bottom-nav,
+  .weather-date {
+    display: none;
+  }
+}

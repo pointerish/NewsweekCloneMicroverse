@@ -1,4 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed');
 
 $font-stack: 'Roboto Condensed', sans-serif;
-$primary-red: red;
+$big-screen-width: 1000px;
+$tablet-width: 700px;
+$mobile-width: 300px;
+
+:root {
+  font-family: $font-stack;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+

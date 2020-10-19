@@ -1,81 +1,65 @@
-.nav-container {
-  width: 100%;
-  padding: 0;
+.red-nav {
+  background-color: red;
+  height: 122px;
 }
 
-.navbar {
-  background-color: $primary-red;
-  margin: 0;
-  height: 100px;
-}
-
-.weather-date {
-  color: white;
-  padding-bottom: 2rem;
-  margin: 0;
-
-  .weather {
-    font-weight: bolder;
-    font-size: 0.9rem;
-    padding-bottom: 1rem;
-  }
-
-  .date {
-    font-size: 0.9rem;
-  }
-}
-
-.logo-link {
-  display: block;
-  padding-bottom: 2rem;   
+.nav-link {
+  font-weight: bolder;
 }
 
 .login-subscribe {
-  margin: 0;
-  padding-bottom: 2rem;
-
-  a {
+  a, button {
     color: white;
-    font-weight: bold;
-    padding-right: 2rem;
-    font-family: $font-stack;
+    text-decoration: none;
+    font-weight: bolder;
+    letter-spacing: 0.1rem;
   }
 
   button {
-    font-family: $font-stack;
-    font-weight: bolder;
-    font-size: 1rem;
-    padding: inherit 0.2rem;
-    letter-spacing: 1px;
+    color: black;
+    letter-spacing: 0;
   }
 }
 
-.bottom-nav {
-  background-color: white;
-  height: 3rem;
-  text-align: center;
-  padding-bottom: 0.5rem;
+.weather-date {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
 
-  .nav-item {
-    list-style-type: none;
+.weather {
+  font-weight: bolder;
+}
 
-    .nav-link {
-      color: black;
-      font-weight: bolder;
-      font-size: 1rem;
-    }
+.search-nav > input {
+  border: none;
+  display: inline;
+  width: 50%;
+}
 
-    #search-nav {
-      border: none;
-      display: inline;
-    }
+.nav-link:hover {
+  color: red;
+}
 
-    .nav-link:hover {
-      color: $primary-red;
-    }
+.search-nav > input:focus {
+  outline: none;
+}
 
-    #search-nav:focus {
-      outline: none;
-    }
-  }
+.search-nav::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: " ";
+  display: block;
+  width: 5%;
+  background-color: #f72210;
+  border-left: 12px solid #f8f9fa;
+  border-top: 13px solid #f72210;
+}
+
+.bottom-nav > ul > li > a {
+  color: black;
+  font-weight: bolder;
+  text-decoration: none;
 }

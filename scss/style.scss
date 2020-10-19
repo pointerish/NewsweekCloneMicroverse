@@ -2,18 +2,45 @@
 @import 'navbar';
 @import 'mqueries';
 
-:root {
-  font-family: $font-stack;
-  margin: 0;
+.main-container {
+  width: 100%;
   padding: 0;
-  box-sizing: border-box;
+  background-color: white;
 }
 
 body {
-  background-color: #F4F5F6;
+  font-family: $font-stack;
 }
 
-.main-container {
-  background-color: white;
-  padding: 0;
+.grey {
+  color: grey;
+}
+
+.black {
+  color: black;
+}
+
+.trending {
+  background-color: #fff;
+}
+
+.card {
+  border: none;
+}
+
+.card-title {
+  font-weight: bolder;
+}
+
+.card-title:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+.card-text {
+  color: grey;
+}
+
+.horizontal-card {
+  flex-direction: row;
 }

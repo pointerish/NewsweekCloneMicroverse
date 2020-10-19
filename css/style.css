@@ -1,77 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed");
-.nav-container {
-  width: 100%;
-  padding: 0;
-}
-
-.navbar {
-  background-color: red;
-  margin: 0;
-  height: 100px;
-}
-
-.weather-date {
-  color: white;
-  padding-bottom: 2rem;
-  margin: 0;
-}
-.weather-date .weather {
-  font-weight: bolder;
-  font-size: 0.9rem;
-  padding-bottom: 1rem;
-}
-.weather-date .date {
-  font-size: 0.9rem;
-}
-
-.logo-link {
-  display: block;
-  padding-bottom: 2rem;
-}
-
-.login-subscribe {
-  margin: 0;
-  padding-bottom: 2rem;
-}
-.login-subscribe a {
-  color: white;
-  font-weight: bold;
-  padding-right: 2rem;
-  font-family: "Roboto Condensed", sans-serif;
-}
-.login-subscribe button {
-  font-family: "Roboto Condensed", sans-serif;
-  font-weight: bolder;
-  font-size: 1rem;
-  padding: inherit 0.2rem;
-  letter-spacing: 1px;
-}
-
-.bottom-nav {
-  background-color: white;
-  height: 3rem;
-  text-align: center;
-  padding-bottom: 0.5rem;
-}
-.bottom-nav .nav-item {
-  list-style-type: none;
-}
-.bottom-nav .nav-item .nav-link {
-  color: black;
-  font-weight: bolder;
-  font-size: 1rem;
-}
-.bottom-nav .nav-item #search-nav {
-  border: none;
-  display: inline;
-}
-.bottom-nav .nav-item .nav-link:hover {
-  color: red;
-}
-.bottom-nav .nav-item #search-nav:focus {
-  outline: none;
-}
-
 :root {
   font-family: "Roboto Condensed", sans-serif;
   margin: 0;
@@ -79,13 +6,131 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: #F4F5F6;
+li {
+  list-style-type: none;
 }
 
+.red-nav {
+  background-color: red;
+  height: 122px;
+}
+
+.nav-link {
+  font-weight: bolder;
+}
+
+.login-subscribe a, .login-subscribe button {
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+  letter-spacing: 0.1rem;
+}
+.login-subscribe button {
+  color: black;
+  letter-spacing: 0;
+}
+
+.weather-date {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
+
+.weather {
+  font-weight: bolder;
+}
+
+.search-nav > input {
+  border: none;
+  display: inline;
+  width: 50%;
+}
+
+.nav-link:hover {
+  color: red;
+}
+
+.search-nav > input:focus {
+  outline: none;
+}
+
+.search-nav::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: " ";
+  display: block;
+  width: 5%;
+  background-color: #f72210;
+  border-left: 12px solid #f8f9fa;
+  border-top: 13px solid #f72210;
+}
+
+.bottom-nav > ul > li > a {
+  color: black;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1000px) {
+  .burger-menu {
+    display: none;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+  .bottom-nav,
+.weather-date {
+    display: none;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 700px) {
+  .bottom-nav,
+.weather-date {
+    display: none;
+  }
+}
 .main-container {
-  background-color: white;
+  width: 100%;
   padding: 0;
+  background-color: white;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.grey {
+  color: grey;
+}
+
+.black {
+  color: black;
+}
+
+.trending {
+  background-color: #fff;
+}
+
+.card {
+  border: none;
+}
+
+.card-title {
+  font-weight: bolder;
+}
+
+.card-title:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+.card-text {
+  color: grey;
+}
+
+.horizontal-card {
+  flex-direction: row;
 }
 
 /*# sourceMappingURL=style.css.map */
