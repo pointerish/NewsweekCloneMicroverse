@@ -27,7 +27,7 @@ This was done for learning purposes using Bootstrap.
 To run the code simply download the repository by either cloning it or 
 downloading it as Zip file. Then use the old trustable browser to open the HTML file.
 
-## Author
+## Author (Actually, Cloner)
 
 **Josias Alvarado**
 
