@@ -74,7 +74,8 @@ li {
 }
 
 @media screen and (min-width: 1000px) {
-  .burger-menu {
+  .burger-menu,
+.user-icon {
     display: none;
   }
 }
@@ -88,6 +89,24 @@ li {
   .bottom-nav,
 .weather-date {
     display: none;
+  }
+
+  .red-nav {
+    display: flex;
+  }
+
+  .logo-link {
+    display: inline;
+  }
+
+  .login-subscribe {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #newsweek-logo {
+    width: 150px;
+    height: 60px;
   }
 }
 .main-container {
@@ -129,8 +148,32 @@ body {
   color: grey;
 }
 
-.horizontal-card {
-  flex-direction: row;
+.card-img-left {
+  background-image: url("https://d.newsweek.com/en/full/1654970/mnuchin.webp?w=790&f=e084f7792793750e01514706215dd25a");
+  background-size: cover;
+  background-position: center center;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.card-body-right {
+  padding-left: 1rem;
+}
+
+.card-horizontal {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+.card-custom {
+  display: grid;
+  grid-template-rows: 60% 40%;
+}
+
+.debate {
+  border-bottom: 2px solid grey;
+  display: block;
+  padding-bottom: 0.3rem;
 }
 
 /*# sourceMappingURL=style.css.map */

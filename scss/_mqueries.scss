@@ -1,5 +1,6 @@
 @media screen and (min-width: $big-screen-width) {
-  .burger-menu {
+  .burger-menu,
+  .user-icon {
     display: none;      
   }
 }
@@ -15,5 +16,23 @@
   .bottom-nav,
   .weather-date {
     display: none;
+  }
+
+  .red-nav {
+    display: flex;
+  }
+
+  .logo-link {
+    display: inline;
+  }
+
+  .login-subscribe {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #newsweek-logo {
+    width: 150px;
+    height: 60px;
   }
 }

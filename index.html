@@ -14,23 +14,26 @@
   <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
 <body class="bg-light">
-  <div class="main-container container col-lg-9 max-width min-width-container sticky-top nav-static p-0">
+  <div class="main-container container col-lg-8 max-width min-width-container sticky-top nav-static p-0">
     <header class="nav-container container col-lg-12 p-0">
         <nav class="navbar red-nav">
           <div class="weather-date">
               <span class="weather"><i class="fas fa-cloud"></i> 28° Managua, NI <i class="far fa-angle-right"></i></span>
               <span class="date">Mon, Oct 19, 2020</span>
           </div>
-          <div class="col-lg-4 logo-link">
+          <div class="col-lg-4 col-xs-6 logo-link">
             <a class="navbar-brand" href="https://www.newsweek.com/">
               <img class="img-fluid" id="newsweek-logo" src="https://upload.wikimedia.org/wikipedia/commons/d/db/Newsweek_Logo.svg" alt="Newsweek Logo">
             </a>
           </div>
-          <div class="login-subscribe">
+          <div class="user-icon col-xs-1">
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="login-subscribe col-xs-4">
             <a href="#">LOGIN</a>
             <button type="button" class="btn btn-warning rounded-pill">SUBSCRIBE <i class="far fa-angle-right"></i></button>
           </div>
-          <div class="burger-menu">
+          <div class="burger-menu col-xs-1">
             <i class="fas fa-bars"></i>
           </div>
       </nav>
@@ -140,30 +143,63 @@
             </div>
           </div>
           <div class="top-stories col-lg-6">
-            <span class="column-title">TOP STORY</span>
-            <div class="card">
+            <span class="column-title p-3">TOP STORY</span>
+            <div class="card border-bottom">
               <img class="card-img-top" src="https://d.newsweek.com/en/full/1654889/fe-economists-banner.webp?" alt="Stimulus">
               <div class="card-body pt-0">
                 <h5 class="card-title">Massive Stimulus Spending Is the Only Fix for Ailing Economy, Experts Say</h5>
                 <p class="card-text">What's the most critical move the next president should make to restore the country's economic health? Newsweek asked 12 top financial experts to offer the next occupant of the White House their best advice.</p>
               </div>
             </div>
-            <div class="card">
-              <img class="card-img-top" src="https://d.newsweek.com/en/full/1654889/fe-economists-banner.webp?" alt="Stimulus">
-              <div class="card-body pt-0">
+            <div class="card-horizontal p-3">
+              <div class="card-img-left"></div>
+              <div class="card-body-right">
                 <h5 class="card-title">Massive Stimulus Spending Is the Only Fix for Ailing Economy, Experts Say</h5>
                 <p class="card-text">What's the most critical move the next president should make to restore the country's economic health? Newsweek asked 12 top financial experts to offer the next occupant of the White House their best advice.</p>
               </div>
             </div>
 
+            <div class="container my-turn">
+              <span class="column-title">MY TURN</span>
+              <div class="row">
+                <div class="col-lg-4">
+                <div class="card-custom">
+                  <img class="card-img-top" src="https://d.newsweek.com/en/full/1654837/best-friends-love-relationships.webp?w=790&f=f51b97f896b30cc5bf22bd1e08edd489" alt="BFFLove">
+                  <div class="card-body pt-0">
+                    <h5 class="card-title">'I Fell in Love With My Best Friend and Finally Asked Her Out'</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 pb-1">
+                <div class="card-custom mt-1">
+                  <img class="card-img-top embed-responsive embed-responsive-21by9" src="https://d.newsweek.com/en/full/1654124/coronavirus-parosmia-pandemic.webp?w=790&f=16a8bf575904e888837c90e649bef02a" alt="COVID Story">
+                  <div class="card-body pt-0">
+                    <h5 class="card-title text-grey">'I Had COVID, Now Food Tastes Rotten and Wine Tastes Like Oil'</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="card-custom">
+                  <img class="card-img-top" src="https://d.newsweek.com/en/full/1653697/brain-cancer-ironman-cancer-athlete-father-daughter.webp?w=397&h=397&f=407acecc64ed8f54a95a0bf0e733b5de" alt="Brain Cancer Story">
+                  <div class="card-body pt-0">
+                    <h5 class="card-title">'I Have Terminal Brain Cancer. I Just Did An Ironman For My 5-Year-Old'</h5>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+
           </div>
           <div class="col-lg-3">
-            <span class="column-title">THE DEBATE</span>
+            <span class="column-title debate">THE DEBATE</span>
           </div>
         </div>
       </div>
       <!--Three Column Section Ends Here-->
     </main>
+    <footer class="col-lg-12"></footer>
   </div>
 </body>
 </html>
