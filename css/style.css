@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed");
+.nav-container {
+  width: 100%;
+  padding: 0;
+}
+
+.navbar {
+  background-color: red;
+  margin: 0;
+  height: 100px;
+}
+
+.weather-date {
+  color: white;
+  padding-bottom: 2rem;
+  margin: 0;
+}
+.weather-date .weather {
+  font-weight: bolder;
+  font-size: 0.9rem;
+  padding-bottom: 1rem;
+}
+.weather-date .date {
+  font-size: 0.9rem;
+}
+
+.logo-link {
+  display: block;
+  padding-bottom: 2rem;
+}
+
+.login-subscribe {
+  margin: 0;
+  padding-bottom: 2rem;
+}
+.login-subscribe a {
+  color: white;
+  font-weight: bold;
+  padding-right: 2rem;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.login-subscribe button {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bolder;
+  font-size: 1rem;
+  padding: inherit 0.2rem;
+  letter-spacing: 1px;
+}
+
+.bottom-nav {
+  background-color: white;
+  height: 3rem;
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+.bottom-nav .nav-item {
+  list-style-type: none;
+}
+.bottom-nav .nav-item .nav-link {
+  color: black;
+  font-weight: bolder;
+  font-size: 1rem;
+}
+.bottom-nav .nav-item #search-nav {
+  border: none;
+  display: inline;
+}
+.bottom-nav .nav-item .nav-link:hover {
+  color: red;
+}
+.bottom-nav .nav-item #search-nav:focus {
+  outline: none;
+}
+
+:root {
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F4F5F6;
+}
+
+.main-container {
+  background-color: white;
+  padding: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

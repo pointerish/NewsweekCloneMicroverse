@@ -1,0 +1,19 @@
+@import 'config';
+@import 'navbar';
+@import 'mqueries';
+
+:root {
+  font-family: $font-stack;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F4F5F6;
+}
+
+.main-container {
+  background-color: white;
+  padding: 0;
+}
