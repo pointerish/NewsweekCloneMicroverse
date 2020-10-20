@@ -1,29 +1,41 @@
-@media screen and (min-width: $big-screen-width) {
+@media screen and (min-width: 1200px) {
   .burger-menu,
   .user-icon {
     display: none;      
   }
 }
 
-@media screen and (min-width: $tablet-width) and (max-width: $big-screen-width) {
+@media screen and (min-width: 1000px) {
+  .burger-menu,
+  .user-icon {
+    display: none;      
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 999px) {
   .bottom-nav,
   .weather-date {
     display: none;
   }
 }
 
-@media screen and (min-width: $mobile-width) and (max-width: $tablet-width) {
+@media screen and (min-width: 300px) and (max-width: 767px) {
   .bottom-nav,
-  .weather-date {
+  .weather-date,
+  .trending {
     display: none;
   }
 
   .red-nav {
     display: flex;
+    height: 30px;
   }
 
   .logo-link {
-    display: inline;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 40%;
   }
 
   .login-subscribe {

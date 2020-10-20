@@ -14,14 +14,14 @@
   <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
 <body class="bg-light">
-  <div class="main-container container col-lg-8 max-width min-width-container sticky-top nav-static p-0">
+  <div class="main-container container-fluid col-lg-8 max-width min-width-container sticky-top nav-static p-0">
     <header class="nav-container container-fluid col-lg-12 p-0">
-        <nav class="navbar red-nav">
-          <div class="weather-date d-flex flex-column justify-content-space-between text-white">
-              <span class="weather font-weight-bolder><i class="fas fa-cloud"></i> 28° Managua, NI <i class="far fa-angle-right"></i></span>
+        <nav class="navbar col red-nav">
+          <div class="weather-date flex-column justify-content-space-between text-white">
+              <span class="weather font-weight-bolder"><i class="fas fa-cloud"></i> 28° Managua, NI <i class="far fa-angle-right"></i></span>
               <span class="date">Mon, Oct 19, 2020</span>
           </div>
-          <div class="col-lg-4 col-xs-6 logo-link">
+          <div class="col-xs-3 col-lg-4 p-0 logo-link">
             <a class="navbar-brand" href="https://www.newsweek.com/">
               <img class="img-fluid" id="newsweek-logo" src="https://upload.wikimedia.org/wikipedia/commons/d/db/Newsweek_Logo.svg" alt="Newsweek Logo">
             </a>
@@ -77,10 +77,10 @@
       </nav>
     </header>
     <main class="container col-lg-12 bg-light p-0">
-      <div class="trending col-lg-12 bg-white p-0 mt-1">
+      <div class="trending col-lg-12 bg-white p-0 mt-1 hideme">
         <ul class="nav">
           <li class="nav-item">
-            <span class="nav-link black">TRENDING</span>
+            <span class="nav-link text-black">TRENDING</span>
           </li>
           <li class="nav-item">
             <a class="nav-link grey" href="#">DONALD TRUMP</a>
@@ -142,7 +142,7 @@
               </div>
             </div>
           </div>
-          <div class="top-stories col-lg-6 p-0">
+          <div class="top-stories col-lg-5 pl-2">
             <span class="column-title p-3">TOP STORY</span>
             <div class="card border-bottom">
               <img class="card-img-top" src="https://d.newsweek.com/en/full/1654889/fe-economists-banner.webp?" alt="Stimulus">
@@ -335,9 +335,100 @@
             </div>
 
           </div>
-          <div class="col-lg-3 p-0">
+          <div class="col-lg-4 p-0">
             <span class="column-title border-bottom-title">THE DEBATE</span>
             <hr class="border-top">
+            <div class="card-horizontal pl-0">
+              <img class="img-fluid" src="https://d.newsweek.com/en/full/1590519/claire-finkelstein-richard-w-painter-2.webp?w=150&h=150&f=890e9e80b6653bf527efb8506fb2601b" alt="BidenTrump">
+              <div class="card-body-right">
+                <p class="card-title-ms font-weight-bolder m-0">McConnell's Rush to Confirm Barrett Ignores Crucial Questions of Principle</p>
+                <p class="card-text-ms">BY CLAIRE O. FINKELSTEIN AND RICHARD W. PAINTER</p>
+              </div>
+            </div>
+            <div class="d-flex flex-column align-items-center vs-container">
+              <h5 class="text-light font-weight-bold text-center p-1 bg-dark rounded-circle">VS</h5>
+            </div>
+            <div class="container pb-4 last-debate border-bottom">
+            <div class="card-horizontal-lr p-1 row h-15">
+              <div class="col-lg-9 p-0">
+              <div class="card-body-left">
+                <p class="card-title-ms font-weight-bolder m-0">On Supreme Court Nominations, All that Counts is the Constitution</p>
+                <p class="card-text-ms">BY ANDREW C. MCCARTHY</p>
+              </div>
+            </div>
+            <div class="col-lg-3 p-2">
+              <img class="img-fluid pt-0" src="https://d.newsweek.com/en/full/1639701/andrew-c-mccarthy.webp?w=150&h=150&f=3e552338567abfe5626df5a9715e8d4f" alt="BidenTrump">
+            </div>
+            </div>
+          </div>
+          <p class="column-title border-bottom-title mt-3">OPINION</p>
+          <div class="card-horizontal pl-0">
+            <img class="img-fluid" src="https://d.newsweek.com/en/full/1590519/claire-finkelstein-richard-w-painter-2.webp?w=150&h=150&f=890e9e80b6653bf527efb8506fb2601b" alt="BidenTrump">
+            <div class="card-body-right">
+              <p class="card-title-ms font-weight-bolder m-0">McConnell's Rush to Confirm Barrett Ignores Crucial Questions of Principle</p>
+              <p class="card-text-ms">BY CLAIRE O. FINKELSTEIN AND RICHARD W. PAINTER</p>
+            </div>
+          </div>
+          <hr class="border-top">
+          <div class="card-horizontal pl-0">
+            <img class="img-fluid" src="https://d.newsweek.com/en/full/1590519/claire-finkelstein-richard-w-painter-2.webp?w=150&h=150&f=890e9e80b6653bf527efb8506fb2601b" alt="BidenTrump">
+            <div class="card-body-right">
+              <p class="card-title-ms font-weight-bolder m-0">McConnell's Rush to Confirm Barrett Ignores Crucial Questions of Principle</p>
+              <p class="card-text-ms">BY CLAIRE O. FINKELSTEIN AND RICHARD W. PAINTER</p>
+            </div>
+          </div>
+          <hr class="border-top">
+          <div class="card-horizontal pl-0">
+            <img class="img-fluid" src="https://d.newsweek.com/en/full/1590519/claire-finkelstein-richard-w-painter-2.webp?w=150&h=150&f=890e9e80b6653bf527efb8506fb2601b" alt="BidenTrump">
+            <div class="card-body-right">
+              <p class="card-title-ms font-weight-bolder m-0">McConnell's Rush to Confirm Barrett Ignores Crucial Questions of Principle</p>
+              <p class="card-text-ms">BY CLAIRE O. FINKELSTEIN AND RICHARD W. PAINTER</p>
+            </div>
+          </div>
+          <hr class="border-top">
+          <div class="card-horizontal pl-0">
+            <img class="img-fluid" src="https://d.newsweek.com/en/full/1590519/claire-finkelstein-richard-w-painter-2.webp?w=150&h=150&f=890e9e80b6653bf527efb8506fb2601b" alt="BidenTrump">
+            <div class="card-body-right">
+              <p class="card-title-ms font-weight-bolder m-0">McConnell's Rush to Confirm Barrett Ignores Crucial Questions of Principle</p>
+              <p class="card-text-ms">BY CLAIRE O. FINKELSTEIN AND RICHARD W. PAINTER</p>
+            </div>
+          </div>
+          <hr class="border-top">
+          <div class="card-horizontal pl-0">
+            <img class="img-fluid" src="https://d.newsweek.com/en/full/1590519/claire-finkelstein-richard-w-painter-2.webp?w=150&h=150&f=890e9e80b6653bf527efb8506fb2601b" alt="BidenTrump">
+            <div class="card-body-right">
+              <p class="card-title-ms font-weight-bolder m-0">McConnell's Rush to Confirm Barrett Ignores Crucial Questions of Principle</p>
+              <p class="card-text-ms">BY CLAIRE O. FINKELSTEIN AND RICHARD W. PAINTER</p>
+            </div>
+          </div>
+          <hr class="border-top">
+          <div class="card-horizontal pl-0">
+            <img class="img-fluid" src="https://d.newsweek.com/en/full/1590519/claire-finkelstein-richard-w-painter-2.webp?w=150&h=150&f=890e9e80b6653bf527efb8506fb2601b" alt="BidenTrump">
+            <div class="card-body-right">
+              <p class="card-title-ms font-weight-bolder m-0">McConnell's Rush to Confirm Barrett Ignores Crucial Questions of Principle</p>
+              <p class="card-text-ms">BY CLAIRE O. FINKELSTEIN AND RICHARD W. PAINTER</p>
+            </div>
+          </div>
+
+          <div class="container col-10 px-2 py-4 bg-light border rounded text-center shadow">
+            <div class="container d-flex d-flex align-items-center text-left">
+              <img class="bg-danger" src="favicon.png" alt="logo">
+              <h5 class="font-weight-bolder ml-3 mt-2">Start your day with our top 5 articles</h5>
+            </div>
+            <form class="row mx-3 mt-2">
+              <input type="email" placeholder="Email Address" class="col-12">
+              <button type="button" class="btn-danger border-0 rounded px-4 py-1 mt-2 text-center col-12">
+                <span class="text-black font-weight-bolder">FREE SIGN UP <i class="far fa-angle-right"></i></span>
+              </button>
+            </form>
+          </div>
+
+            </div>
+          </div>
+          <div class="container bg-white col-12 text-center border-bottom">
+            <div class="container d-flex d-flex justify-content-center text-center">
+              <img class="bg-danger" src="favicon.png" alt="logo">
+              <h5 class="font-weight-bolder ml-3 mt-2">IN THE MAGAZINE</h5>
             </div>
           </div>
         </div>

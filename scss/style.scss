@@ -20,14 +20,6 @@ hr {
   color: grey;
 }
 
-.black {
-  color: black;
-}
-
-.trending {
-  background-color: #fff;
-}
-
 .card-img-left {
   background-image: url('https://d.newsweek.com/en/full/1654970/mnuchin.webp?w=790&f=e084f7792793750e01514706215dd25a');
   background-size: cover;
@@ -70,4 +62,28 @@ hr {
 
 .card-text-ms {
   font-size: 0.4rem;
+}
+
+.vs-container {
+  z-index: 2;
+}
+
+.vs-container::before {
+  margin-bottom: 2.5px;
+  position: absolute;
+  content: " ";
+  display: block;
+  background-color: var(--gray-one);
+}
+
+.vs-container::after {
+  margin-bottom: 2.5px;
+  position: absolute;
+  content: " ";
+  display: block;
+  background-color: var(--gray-one);
+}
+
+.last-debate {
+  border-width: 8px !important;
 }
