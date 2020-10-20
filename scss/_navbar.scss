@@ -21,17 +21,6 @@
   }
 }
 
-.weather-date {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  color: white;
-}
-
-.weather {
-  font-weight: bolder;
-}
-
 .search-nav > input {
   border: none;
   display: inline;
@@ -56,10 +45,4 @@
   background-color: #f72210;
   border-left: 12px solid #f8f9fa;
   border-top: 13px solid #f72210;
-}
-
-.bottom-nav > ul > li > a {
-  color: black;
-  font-weight: bolder;
-  text-decoration: none;
 }

@@ -28,33 +28,12 @@ hr {
   background-color: #fff;
 }
 
-.card {
-  border: none;
-}
-
-.card-title {
-  font-weight: bolder;
-}
-
-.card-title:hover {
-  text-decoration: underline;
-  text-decoration-color: red;
-}
-
-.card-text {
-  color: grey;
-}
-
 .card-img-left {
   background-image: url('https://d.newsweek.com/en/full/1654970/mnuchin.webp?w=790&f=e084f7792793750e01514706215dd25a');
   background-size: cover;
   background-position: center center;
   max-width: 100%;
   max-height: 100%;
-}
-
-.card-body-right {
-  padding-left: 1rem;
 }
 
 .card-horizontal {
@@ -74,13 +53,21 @@ hr {
   font-size: 0.9rem;
 }
 
-.card-custom > div > p:hover {
-  text-decoration: underline;
-  text-decoration-color: red;
-}
-
 .border-bottom-title {
   border-bottom: 2px solid grey;
   display: block;
   padding-bottom: 0.3rem;
+}
+
+.card-title-ms {
+  font-size: 0.5rem;
+}
+
+.hover-red:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+.card-text-ms {
+  font-size: 0.4rem;
 }
