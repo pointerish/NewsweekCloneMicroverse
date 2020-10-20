@@ -12,6 +12,10 @@ body {
   font-family: $font-stack;
 }
 
+hr {
+  border-top: 3px solid grey;
+}
+
 .grey {
   color: grey;
 }
@@ -60,10 +64,22 @@ body {
 
 .card-custom {
   display: grid;
-  grid-template-rows: 60% 40%;
+  grid-template-areas:
+   "card-img-top"
+   "card-body";
 }
 
-.debate {
+.card-custom > div > p {
+  color: grey;
+  font-size: 0.9rem;
+}
+
+.card-custom > div > p:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+.border-bottom-title {
   border-bottom: 2px solid grey;
   display: block;
   padding-bottom: 0.3rem;
