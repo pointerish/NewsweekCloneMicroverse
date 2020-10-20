@@ -13,9 +13,9 @@
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
-<body class="bg-light">
-  <div class="main-container container-fluid col-lg-8 max-width min-width-container sticky-top nav-static p-0">
-    <header class="nav-container container-fluid col-lg-12 p-0">
+<body class="bg-light col-xs-12">
+  <div class="main-container container-fluid col-lg-8 col-xs-12 max-width min-width-container nav-static p-0">
+    <header class="nav-container container-fluid col-12 p-0">
         <nav class="navbar col red-nav">
           <div class="weather-date flex-column justify-content-space-between text-white">
               <span class="weather font-weight-bolder"><i class="fas fa-cloud"></i> 28° Managua, NI <i class="far fa-angle-right"></i></span>
@@ -26,14 +26,14 @@
               <img class="img-fluid" id="newsweek-logo" src="https://upload.wikimedia.org/wikipedia/commons/d/db/Newsweek_Logo.svg" alt="Newsweek Logo">
             </a>
           </div>
-          <div class="user-icon col-xs-1">
+          <div class="user-icon d-lg-none col-xs-1">
             <i class="fas fa-user"></i>
           </div>
           <div class="login-subscribe col-xs-4">
             <a href="#">LOGIN</a>
             <button type="button" class="btn btn-warning rounded-pill">SUBSCRIBE <i class="far fa-angle-right"></i></button>
           </div>
-          <div class="burger-menu col-xs-1">
+          <div class="burger-menu d-lg-none col-xs-1">
             <i class="fas fa-bars"></i>
           </div>
       </nav>
@@ -108,18 +108,19 @@
       <!--Three Column Section Starts Here-->
       <div class="container bg-white col-lg-12 mt-1">
         <div class="row pt-4">
-          <div class="featured-stories overflow-hidden col-lg-3 p-0">
+          <div class="col-lg-3 position-sticky p-0">
+          <div class="featured-stories">
             <span class="column-title p-3">FEATURED STORIES</span>
             <div class="card border-none">
-              <img class="card-img-top p-3" src="https://d.newsweek.com/en/full/1654993/china-economy-retail.webp?w=790&f=f511cb19e2ef1deda5ef46ec5b17ce3d" alt="China Recovery">
-              <div class="card-body pt-0">
+              <img class="card-img-top px-3 py-0" src="https://d.newsweek.com/en/full/1654993/china-economy-retail.webp?w=790&f=f511cb19e2ef1deda5ef46ec5b17ce3d" alt="China Recovery">
+              <div class="card-body pt-0"t>
                 <h5 class="card-title font-weight-bolder">China Outshines U.S. as First Major Economy to Recover From Pandemic</h5>
                 <p class="card-text text-grey">China's economy grew 4.9 percent between July and September compared to the same quarter last year, a little slower than expected but signaling a strong recovery.</p>
               </div>
             </div>
 
             <div class="card border-none">
-              <img class="card-img-top p-3" src="https://d.newsweek.com/en/full/1655102/joe-biden-donald-trump.webp?w=790&f=37573d08923365dcd23d7dbe292b5a0e" alt="Trump VS Biden">
+              <img class="card-img-top px-3 py-0" src="https://d.newsweek.com/en/full/1655102/joe-biden-donald-trump.webp?w=790&f=37573d08923365dcd23d7dbe292b5a0e" alt="Trump VS Biden">
               <div class="card-body pt-0">
                 <h5 class="card-title font-weight-bolder">15 Days to Election: What Polls Say About Biden and Trump in Swing States</h5>
                 <p class="card-text text-grey">Joe Biden appears to be favored over Donald Trump in Arizona, Florida, Michigan, Pennsylvania, North Carolina and Wisconsin—although the margin is close in some of these battleground states.</p>
@@ -127,7 +128,7 @@
             </div>
 
             <div class="card border-none">
-              <img class="card-img-top p-3" src="https://d.newsweek.com/en/full/1655099/john-ratcliffe-hunter-biden-investigation.webp?w=790&f=28ff8cec4c9fab5cea30f2312cc12564" alt="Biden">
+              <img class="card-img-top px-3 py-0" src="https://d.newsweek.com/en/full/1655099/john-ratcliffe-hunter-biden-investigation.webp?w=790&f=28ff8cec4c9fab5cea30f2312cc12564" alt="Biden">
               <div class="card-body pt-0">
                 <h5 class="card-title font-weight-bolder">Hunter Biden Emails Have 'Nothing to Do' With Russia, Intel Chief Says</h5>
                 <p class="card-text text-grey">Ratcliffe said he's tired of "people using the intelligence community to leverage some political narrative."</p>
@@ -135,207 +136,210 @@
             </div>
 
             <div class="card border-none">
-              <img class="card-img-top p-3" src="https://d.newsweek.com/en/full/1655084/stockholm-sweden-april-2020.webp?w=790&f=fa226b75b7365aabd5de304480ebc2e2" alt="China Recovery">
+              <img class="card-img-top px-3 py-0" src="https://d.newsweek.com/en/full/1655084/stockholm-sweden-april-2020.webp?w=790&f=fa226b75b7365aabd5de304480ebc2e2" alt="China Recovery">
               <div class="card-body pt-0">
                 <h5 class="card-title font-weight-bolder">Sweden, Which Refused Lockdown During COVID First Wave, Imposes New Rules</h5>
                 <p class="card-text text-grey">Weekly new cases in Sweden rose for six consecutive weeks since the week commencing August 31, according to the World Health Organization.</p>
               </div>
             </div>
           </div>
-          <div class="top-stories col-lg-5 pl-2">
-            <span class="column-title p-3">TOP STORY</span>
-            <div class="card border-bottom">
-              <img class="card-img-top" src="https://d.newsweek.com/en/full/1654889/fe-economists-banner.webp?" alt="Stimulus">
-              <div class="card-body pt-0">
-                <h5 class="card-title font-weight-bolder">Massive Stimulus Spending Is the Only Fix for Ailing Economy, Experts Say</h5>
-                <p class="card-text text-grey">What's the most critical move the next president should make to restore the country's economic health? Newsweek asked 12 top financial experts to offer the next occupant of the White House their best advice.</p>
-              </div>
-            </div>
-            <div class="card-horizontal p-3">
-              <div class="card-img-left"></div>
-              <div class="card-body-right">
-                <h5 class="card-title font-weight-bolder">Massive Stimulus Spending Is the Only Fix for Ailing Economy, Experts Say</h5>
-                <p class="card-text text-grey">What's the most critical move the next president should make to restore the country's economic health? Newsweek asked 12 top financial experts to offer the next occupant of the White House their best advice.</p>
-              </div>
-            </div>
-
-            <div class="container my-turn pt-1">
-              <span class="column-title">MY TURN</span>
-              <div class="row">
-                <div class="col-lg-4">
-                <div class="card-custom">
-                  <img class="img-fluid" src="https://d.newsweek.com/en/full/1654837/best-friends-love-relationships.webp?" alt="BFFLove">
-                  <div class="card-body p-0 m-0">
-                    <p class="card-text font-weight-bold mt-2"">'I Fell in Love With My Best Friend and Finally Asked Her Out'</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 pb-1">
-                <div class="card-custom">
-                  <img class="img-fluid" src="https://d.newsweek.com/en/full/1654837/best-friends-love-relationships.webp?" alt="Married at 60">
-                  <div class="card-body p-0 m-0">
-                    <p class="card-text font-weight-bold mt-2"">'I Had COVID, Now Food Tastes Rotten and Wine Tastes Like Oil'</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4">
-                <div class="card-custom">
-                  <img class="img-fluid" src="https://d.newsweek.com/en/full/1654837/best-friends-love-relationships.webp?" alt="Brain Cancer Story">
-                  <div class="card-body p-0 m-0">
-                    <p class="card-text font-weight-bold mt-2"">'I Have Terminal Brain Cancer. I Just Did An Ironman For My 5-Year-Old'</p>
-                  </div>
-                </div>
-              </div>
-              </div>
-            </div>
-
-            <div class="container my-turn pt-5">
-              <span class="column-title">CULTURE & TRAVEL</span>
-              <div class="row">
-                <div class="col-lg-4">
-                <div class="card-custom">
-                  <img class="img-fluid" src="https://d.newsweek.com/en/full/1654837/best-friends-love-relationships.webp?" alt="BFFLove">
-                  <div class="card-body p-0 m-0">
-                    <p class="card-text font-weight-bold mt-2"">'I Fell in Love With My Best Friend and Finally Asked Her Out'</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4">
-                <div class="card-custom">
-                  <img class="img-fluid" src="https://d.newsweek.com/en/full/1654837/best-friends-love-relationships.webp?" alt="COVID Story">
-                  <div class="card-body p-0 m-0">
-                    <p class="card-text font-weight-bold mt-2 hover-red">'I Had COVID, Now Food Tastes Rotten and Wine Tastes Like Oil'</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4">
-                <div class="card-custom">
-                  <img class="img-fluid" src="https://d.newsweek.com/en/full/1654837/best-friends-love-relationships.webp?" alt="Brain Cancer Story">
-                  <div class="card-body p-0 m-0">
-                    <p class="card-text font-weight-bold mt-2 hover-red">'I Have Terminal Brain Cancer. I Just Did An Ironman For My 5-Year-Old'</p>
-                  </div>
-                </div>
-              </div>
-              </div>
-            </div>
-            <div class="container more-stories mt-5">
-              <span class="column-title border-bottom-title">MORE STORIES</span>
-              <hr/>
-              <div class="card-horizontal">
-                <img class="img-fluid" src="https://d.newsweek.com/en/full/1655362/donald-trump-2020-election-rally.webp?w=790&f=65fe4ccdfb244abbffb0c33c26eb7255" alt="Trump Menacingly Breaking the Fourth Wall">
-                <div class="card-body-right">
-                  <p class="card-title-ms font-weight-bolder m-0">Trump Has More Campaign Volunteers than Obama Ever Did and Democrats Worry</p>
-                  <p class="card-text-ms">The president's data-driven campaign workers want to know if you go to church or have a hunting or fishing license. Here's why.</p>
-                </div>
-              </div>
-              <hr class="border-top">
-  
-              <div class="card-horizontal">
-                <img class="img-fluid" src="https://d.newsweek.com/en/full/1655502/iran-sanctions-us-cruel-currency-muslims.webp?w=790&f=cd668e5f45dc1778af55fa07090ae2bd" alt="Iran">
-                <div class="card-body-right">
-                  <p class="card-title-ms font-weight-bolder m-0">Iran Speaker Says Muslim Nations Must Unite Against 'Cruel' U.S. Sanctions</p>
-                  <p class="card-text-ms">Iranian officials have condemned the U.S. for imposing additional rounds of sanctions even as the country grapples with the COVID-19 pandemic.</p>
-                </div>
-              </div>
-              <hr class="border-top">
-  
-              <div class="card-horizontal">
-                <img class="img-fluid" src="https://d.newsweek.com/en/full/1655480/public-phone.webp?w=790&f=6ab1c4a24b2f7495ae5d260b1a3490b9" alt="Cash">
-                <div class="card-body-right">
-                  <p class="card-title-ms font-weight-bolder m-0">CAREN Act Will Make Racially Motivated 911 Calls Illegal in San Francisco</p>
-                  <p class="card-text-ms">New law will prevent racially motivated calls to the emergency services, victims will soon be able to sue the perpetrators.</p>
-                </div>
-              </div>
-              <hr class="border-top">
-  
-              <div class="card-horizontal">
-                <img class="img-fluid" src="https://d.newsweek.com/en/full/1655528/joe-biden-donald-trump.webp?" alt="BidenTrump">
-                <div class="card-body-right">
-                  <p class="card-title-ms font-weight-bolder m-0">More Americans Trust Biden to Maintain 'Law and Order' Than Trump: Poll</p>
-                  <p class="card-text-ms">Despite Trump describing himself as the "law and order" candidate, only 44 percent of likely voters say they trust the president to keep the peace.</p>
-                </div>
-              </div>
-              <hr class="border-top">
-  
-              <div class="card-horizontal">
-                <img class="img-fluid" src="https://d.newsweek.com/en/full/1655467/new-york-times-square.webp?" alt="Growth">
-                <div class="card-body-right">
-                  <p class="card-title-ms font-weight-bolder m-0">U.S. Third-Quarter Growth Could Be Late Election Boost for Trump</p>
-                  <p class="card-text-ms">President Donald Trump regularly polls strongly on the economy, one of the few advantages he has over his rival, Democratic nominee Joe Biden.</p>
-                </div>
-              </div>
-              <hr class="border-top">
-  
-              <div class="card-horizontal">
-                <img class="img-fluid" src="https://d.newsweek.com/en/full/1655508/teen-student-gen-z-stock-getty.webp?" alt="BidenTrump">
-                <div class="card-body-right">
-                  <p class="card-title-ms font-weight-bolder m-0">Gen Z Is the Most Stressed Out Group in America, Poll Finds</p>
-                  <p class="card-text-ms">American Psychological Association CEO Arthur Evans told "Newsweek" the new reality of the pandemic means that uncertainty is amplified for this age group.</p>
-                </div>
-              </div>
-              <hr class="border-top">
-  
-              <div class="card-horizontal">
-                <img class="img-fluid" src="https://d.newsweek.com/en/full/1561291/breaking-news-newsweek-high-resolution.webp?" alt="BidenTrump">
-                <div class="card-body-right">
-                  <p class="card-title-ms font-weight-bolder m-0">Inventor Who Killed Journalist Kim Wall Recaptured After Prison Break</p>
-                  <p class="card-text-ms">Peter Madsen fled the Herstedvester Prison brandishing a "pistol-like object" on Tuesday, but was apprehended a short time later.</p>
-                </div>
-              </div>
-              <hr class="border-top">
-  
-              <div class="card-horizontal">
-                <img class="img-fluid" src="https://d.newsweek.com/en/full/1652868/conservative-commentator-candace-owens.webp?" alt="BidenTrump">
-                <div class="card-body-right">
-                  <p class="card-title-ms font-weight-bolder m-0">Candace Owens Says 50 Cent Endorsing Trump is Not Betraying Black America</p>
-                  <p class="card-text-ms">"I want to just say something to defend 50 Cent because I am just seeing so much ignorance in his comments from the majority of Black people saying they're done with him and it's because he's rich and he's betrayed them," Owens said on Instagram.</p>
-                </div>
-              </div>
-              <hr class="border-top">
-  
-              <div class="card-horizontal">
-                <img class="img-fluid" src="https://d.newsweek.com/en/full/1655430/china-military-parade-missile.webp?" alt="BidenTrump">
-                <div class="card-body-right">
-                  <p class="card-title-ms font-weight-bolder m-0">China Media Plays Down Hypersonic Missile Deployment 'Speculations'</p>
-                  <p class="card-text-ms">But Chinese state newspaper Global Times said using the advanced medium-range ballistic missiles on Taiwan would be "a waste," insisting they would be better served targeting "foreign military intervention."</p>
-                </div>
-              </div>
-              <hr class="border-top">
-  
-              <div class="card-horizontal">
-                <img class="img-fluid" src="https://d.newsweek.com/en/full/1655416/elizabeth-warren-speaks-during-news-conference.webp?" alt="BidenTrump">
-                <div class="card-body-right">
-                  <p class="card-title-ms font-weight-bolder m-0">Elizabeth Warren Blames Trump Administration for Fauci Needing Security</p>
-                  <p class="card-text-ms">Fauci has had a security detail assigned to him since threats were made against his life over the course of the pandemic.</p>
-                </div>
-              </div>
-              <hr class="border-top">
-  
-              <div class="card-horizontal">
-                <img class="img-fluid" src="https://d.newsweek.com/en/full/1655408/ghislaine-maxwell-vanity-fair-oscar-party-2014.webp?" alt="BidenTrump">
-                <div class="card-body-right">
-                  <p class="card-title-ms font-weight-bolder m-0">Ghislaine Maxwell Loses Bid to Keep Court Claims About Private Life Secret</p>
-                  <p class="card-text-ms">Ghislaine Maxwell faces seeing seven hours of her past testimony on Jeffrey Epstein sex abuse allegations being included in the evidence at her trial — including details about her private life.</p>
-                </div>
-              </div>
-              <hr class="border-top">
-  
-              <div class="card-horizontal">
-                <img class="img-fluid" src="https://d.newsweek.com/en/full/1655404/karl-manke.webp?" alt="BidenTrump">
-                <div class="card-body-right">
-                  <p class="card-title-ms font-weight-bolder m-0">Michigan Barber Who Defied Gov. Whitmer Could Still Lose His License</p>
-                  <p class="card-text-ms">Karl Manke was facing two misdemeanor charges for reopening his barbershop despite an order for non-essential businesses to close amid the COVID-19 pandemic.</p>
-                </div>
-              </div>
-              <hr class="border-top">
-            </div>
-
           </div>
-          <div class="col-lg-4 p-0">
+            <div class="col-lg-5 pl-2 overflow-auto">
+              <div class="top-stories">
+                <span class="column-title p-3">TOP STORY</span>
+                <div class="card border-bottom">
+                  <img class="card-img-top" src="https://d.newsweek.com/en/full/1654889/fe-economists-banner.webp?" alt="Stimulus">
+                  <div class="card-body pt-0">
+                    <h5 class="card-title font-weight-bolder">Massive Stimulus Spending Is the Only Fix for Ailing Economy, Experts Say</h5>
+                    <p class="card-text text-grey">What's the most critical move the next president should make to restore the country's economic health? Newsweek asked 12 top financial experts to offer the next occupant of the White House their best advice.</p>
+                  </div>
+                </div>
+                <div class="card-horizontal p-3">
+                  <div class="card-img-left"></div>
+                  <div class="card-body-right">
+                    <h5 class="card-title font-weight-bolder">Massive Stimulus Spending Is the Only Fix for Ailing Economy, Experts Say</h5>
+                    <p class="card-text text-grey">What's the most critical move the next president should make to restore the country's economic health? Newsweek asked 12 top financial experts to offer the next occupant of the White House their best advice.</p>
+                  </div>
+                </div>
+    
+                <div class="container my-turn pt-1">
+                  <span class="column-title">MY TURN</span>
+                  <div class="row">
+                    <div class="col-lg-4">
+                    <div class="card-custom">
+                      <img class="img-fluid" src="https://d.newsweek.com/en/full/1654837/best-friends-love-relationships.webp?" alt="BFFLove">
+                      <div class="card-body p-0 m-0">
+                        <p class="card-text font-weight-bold mt-2"">'I Fell in Love With My Best Friend and Finally Asked Her Out'</p>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <div class="col-lg-4 pb-1">
+                    <div class="card-custom">
+                      <img class="img-fluid" src="https://d.newsweek.com/en/full/1654837/best-friends-love-relationships.webp?" alt="Married at 60">
+                      <div class="card-body p-0 m-0">
+                        <p class="card-text font-weight-bold mt-2"">'I Had COVID, Now Food Tastes Rotten and Wine Tastes Like Oil'</p>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <div class="col-lg-4">
+                    <div class="card-custom">
+                      <img class="img-fluid" src="https://d.newsweek.com/en/full/1654837/best-friends-love-relationships.webp?" alt="Brain Cancer Story">
+                      <div class="card-body p-0 m-0">
+                        <p class="card-text font-weight-bold mt-2"">'I Have Terminal Brain Cancer. I Just Did An Ironman For My 5-Year-Old'</p>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+    
+                <div class="container my-turn pt-5">
+                  <span class="column-title">CULTURE & TRAVEL</span>
+                  <div class="row">
+                    <div class="col-lg-4">
+                    <div class="card-custom">
+                      <img class="img-fluid" src="https://d.newsweek.com/en/full/1654837/best-friends-love-relationships.webp?" alt="BFFLove">
+                      <div class="card-body p-0 m-0">
+                        <p class="card-text font-weight-bold mt-2"">'I Fell in Love With My Best Friend and Finally Asked Her Out'</p>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <div class="col-lg-4">
+                    <div class="card-custom">
+                      <img class="img-fluid" src="https://d.newsweek.com/en/full/1654837/best-friends-love-relationships.webp?" alt="COVID Story">
+                      <div class="card-body p-0 m-0">
+                        <p class="card-text font-weight-bold mt-2 hover-red">'I Had COVID, Now Food Tastes Rotten and Wine Tastes Like Oil'</p>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <div class="col-lg-4">
+                    <div class="card-custom">
+                      <img class="img-fluid" src="https://d.newsweek.com/en/full/1654837/best-friends-love-relationships.webp?" alt="Brain Cancer Story">
+                      <div class="card-body p-0 m-0">
+                        <p class="card-text font-weight-bold mt-2 hover-red">'I Have Terminal Brain Cancer. I Just Did An Ironman For My 5-Year-Old'</p>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                <div class="container more-stories mt-5">
+                  <span class="column-title border-bottom-title">MORE STORIES</span>
+                  <hr/>
+                  <div class="card-horizontal">
+                    <img class="img-fluid" src="https://d.newsweek.com/en/full/1655362/donald-trump-2020-election-rally.webp?w=790&f=65fe4ccdfb244abbffb0c33c26eb7255" alt="Trump Menacingly Breaking the Fourth Wall">
+                    <div class="card-body-right">
+                      <p class="card-title-ms font-weight-bolder m-0">Trump Has More Campaign Volunteers than Obama Ever Did and Democrats Worry</p>
+                      <p class="card-text-ms">The president's data-driven campaign workers want to know if you go to church or have a hunting or fishing license. Here's why.</p>
+                    </div>
+                  </div>
+                  <hr class="border-top">
+      
+                  <div class="card-horizontal">
+                    <img class="img-fluid" src="https://d.newsweek.com/en/full/1655502/iran-sanctions-us-cruel-currency-muslims.webp?w=790&f=cd668e5f45dc1778af55fa07090ae2bd" alt="Iran">
+                    <div class="card-body-right">
+                      <p class="card-title-ms font-weight-bolder m-0">Iran Speaker Says Muslim Nations Must Unite Against 'Cruel' U.S. Sanctions</p>
+                      <p class="card-text-ms">Iranian officials have condemned the U.S. for imposing additional rounds of sanctions even as the country grapples with the COVID-19 pandemic.</p>
+                    </div>
+                  </div>
+                  <hr class="border-top">
+      
+                  <div class="card-horizontal">
+                    <img class="img-fluid" src="https://d.newsweek.com/en/full/1655480/public-phone.webp?w=790&f=6ab1c4a24b2f7495ae5d260b1a3490b9" alt="Cash">
+                    <div class="card-body-right">
+                      <p class="card-title-ms font-weight-bolder m-0">CAREN Act Will Make Racially Motivated 911 Calls Illegal in San Francisco</p>
+                      <p class="card-text-ms">New law will prevent racially motivated calls to the emergency services, victims will soon be able to sue the perpetrators.</p>
+                    </div>
+                  </div>
+                  <hr class="border-top">
+      
+                  <div class="card-horizontal">
+                    <img class="img-fluid" src="https://d.newsweek.com/en/full/1655528/joe-biden-donald-trump.webp?" alt="BidenTrump">
+                    <div class="card-body-right">
+                      <p class="card-title-ms font-weight-bolder m-0">More Americans Trust Biden to Maintain 'Law and Order' Than Trump: Poll</p>
+                      <p class="card-text-ms">Despite Trump describing himself as the "law and order" candidate, only 44 percent of likely voters say they trust the president to keep the peace.</p>
+                    </div>
+                  </div>
+                  <hr class="border-top">
+      
+                  <div class="card-horizontal">
+                    <img class="img-fluid" src="https://d.newsweek.com/en/full/1655467/new-york-times-square.webp?" alt="Growth">
+                    <div class="card-body-right">
+                      <p class="card-title-ms font-weight-bolder m-0">U.S. Third-Quarter Growth Could Be Late Election Boost for Trump</p>
+                      <p class="card-text-ms">President Donald Trump regularly polls strongly on the economy, one of the few advantages he has over his rival, Democratic nominee Joe Biden.</p>
+                    </div>
+                  </div>
+                  <hr class="border-top">
+      
+                  <div class="card-horizontal">
+                    <img class="img-fluid" src="https://d.newsweek.com/en/full/1655508/teen-student-gen-z-stock-getty.webp?" alt="BidenTrump">
+                    <div class="card-body-right">
+                      <p class="card-title-ms font-weight-bolder m-0">Gen Z Is the Most Stressed Out Group in America, Poll Finds</p>
+                      <p class="card-text-ms">American Psychological Association CEO Arthur Evans told "Newsweek" the new reality of the pandemic means that uncertainty is amplified for this age group.</p>
+                    </div>
+                  </div>
+                  <hr class="border-top">
+      
+                  <div class="card-horizontal">
+                    <img class="img-fluid" src="https://d.newsweek.com/en/full/1561291/breaking-news-newsweek-high-resolution.webp?" alt="BidenTrump">
+                    <div class="card-body-right">
+                      <p class="card-title-ms font-weight-bolder m-0">Inventor Who Killed Journalist Kim Wall Recaptured After Prison Break</p>
+                      <p class="card-text-ms">Peter Madsen fled the Herstedvester Prison brandishing a "pistol-like object" on Tuesday, but was apprehended a short time later.</p>
+                    </div>
+                  </div>
+                  <hr class="border-top">
+      
+                  <div class="card-horizontal">
+                    <img class="img-fluid" src="https://d.newsweek.com/en/full/1652868/conservative-commentator-candace-owens.webp?" alt="BidenTrump">
+                    <div class="card-body-right">
+                      <p class="card-title-ms font-weight-bolder m-0">Candace Owens Says 50 Cent Endorsing Trump is Not Betraying Black America</p>
+                      <p class="card-text-ms">"I want to just say something to defend 50 Cent because I am just seeing so much ignorance in his comments from the majority of Black people saying they're done with him and it's because he's rich and he's betrayed them," Owens said on Instagram.</p>
+                    </div>
+                  </div>
+                  <hr class="border-top">
+      
+                  <div class="card-horizontal">
+                    <img class="img-fluid" src="https://d.newsweek.com/en/full/1655430/china-military-parade-missile.webp?" alt="BidenTrump">
+                    <div class="card-body-right">
+                      <p class="card-title-ms font-weight-bolder m-0">China Media Plays Down Hypersonic Missile Deployment 'Speculations'</p>
+                      <p class="card-text-ms">But Chinese state newspaper Global Times said using the advanced medium-range ballistic missiles on Taiwan would be "a waste," insisting they would be better served targeting "foreign military intervention."</p>
+                    </div>
+                  </div>
+                  <hr class="border-top">
+      
+                  <div class="card-horizontal">
+                    <img class="img-fluid" src="https://d.newsweek.com/en/full/1655416/elizabeth-warren-speaks-during-news-conference.webp?" alt="BidenTrump">
+                    <div class="card-body-right">
+                      <p class="card-title-ms font-weight-bolder m-0">Elizabeth Warren Blames Trump Administration for Fauci Needing Security</p>
+                      <p class="card-text-ms">Fauci has had a security detail assigned to him since threats were made against his life over the course of the pandemic.</p>
+                    </div>
+                  </div>
+                  <hr class="border-top">
+      
+                  <div class="card-horizontal">
+                    <img class="img-fluid" src="https://d.newsweek.com/en/full/1655408/ghislaine-maxwell-vanity-fair-oscar-party-2014.webp?" alt="BidenTrump">
+                    <div class="card-body-right">
+                      <p class="card-title-ms font-weight-bolder m-0">Ghislaine Maxwell Loses Bid to Keep Court Claims About Private Life Secret</p>
+                      <p class="card-text-ms">Ghislaine Maxwell faces seeing seven hours of her past testimony on Jeffrey Epstein sex abuse allegations being included in the evidence at her trial — including details about her private life.</p>
+                    </div>
+                  </div>
+                  <hr class="border-top">
+      
+                  <div class="card-horizontal">
+                    <img class="img-fluid" src="https://d.newsweek.com/en/full/1655404/karl-manke.webp?" alt="BidenTrump">
+                    <div class="card-body-right">
+                      <p class="card-title-ms font-weight-bolder m-0">Michigan Barber Who Defied Gov. Whitmer Could Still Lose His License</p>
+                      <p class="card-text-ms">Karl Manke was facing two misdemeanor charges for reopening his barbershop despite an order for non-essential businesses to close amid the COVID-19 pandemic.</p>
+                    </div>
+                  </div>
+                  <hr class="border-top">
+                </div>
+              </div>
+            </div>
+        <div class="position-sticky col-lg-4 p-0">
+          <div class="debate-stories">
             <span class="column-title border-bottom-title">THE DEBATE</span>
             <hr class="border-top">
             <div class="card-horizontal pl-0">
@@ -424,13 +428,14 @@
           </div>
 
             </div>
-          </div> 
+          </div>
           <div class="container bg-white col-12 text-center border-bottom">
             <div class="container d-flex d-flex justify-content-center text-center">
               <img class="bg-danger" src="favicon.png" alt="logo">
               <h5 class="font-weight-bolder ml-3 mt-2">IN THE MAGAZINE</h5>
             </div>
           </div>
+      </div>
       </div>
       <!--Three Column Section Ends Here-->
       <div class="magazine container bg-white col-lg-12 mt-1 mb-4">
@@ -533,8 +538,7 @@
           <h5 class="font-weight-bolder ml-3 mt-2">EDITOR'S PICK</h5>
         </div>
       </div>
-
-      <div class="editorpick container bg-white col-lg-12 mt-1 mb-4">
+      <div class="editorpick container bg-white col-lg-12 mt-1 mb-4 border-bottom">
         <div class="row pt-4">
           <div class="col-3 mt-4">
             <div class="card border-none">
@@ -612,9 +616,307 @@
           </div>
         </div>
       </div>
-
+      <div class="us-section container bg-white col-lg-12 mt-2 mb-2 border-bottom">
+        <div class="row">
+          <div class="col-4 mt-4">
+              <div class="card border-none">
+                <img class="card-img-top p-3" src="https://d.newsweek.com/en/full/1655914/coronavirus-us.webp?w=397&h=265&f=84a0791253a16dbc0e21365f189945ee" alt="China Recovery">
+                <div class="card-body pt-0">
+                  <h5 class="card-title font-weight-bolder">Ohio Reports Record COVID Hospitalizations, While PA Sees Most Since June</h5>
+                </div>
+              </div>
+          </div>
+          <div class="col-4 mt-4">
+            <div class="card border-none">
+              <img class="card-img-top p-3" src="https://d.newsweek.com/en/full/1655756/trump-rally-carson-city-nevada-october-18.webp?w=397&h=265&f=9c30072a69fac7f72bc8136e78935fcb" alt="China Recovery">
+              <div class="card-body pt-0">
+                <h5 class="card-title font-weight-bolder">Over 200 Protests Planned If Trump Attempts to Dispute Election Results</h5>
+              </div>
+            </div>
+        </div>
+        <div class="col-4 mt-4">
+          <div class="d-flex flex-column">
+            <div class="card-horizontal p-3 border-bottom">
+              <div class="card-img-left"></div>
+              <div class="card-body-right">
+                <h5 class="card-title font-weight-bolder">Massive Stimulus Spending Is the Only Fix for Ailing Economy, Experts Say</h5>
+              </div>
+            </div>
+            <div class="card-horizontal p-3 border-bottom">
+              <div class="card-img-left"></div>
+              <div class="card-body-right">
+                <h5 class="card-title font-weight-bolder">Massive Stimulus Spending Is the Only Fix for Ailing Economy, Experts Say</h5>
+              </div>
+            </div>
+            <div class="card-horizontal p-3">
+              <div class="card-img-left"></div>
+              <div class="card-body-right">
+                <h5 class="card-title font-weight-bolder">Massive Stimulus Spending Is the Only Fix for Ailing Economy, Experts Say</h5>
+              </div>
+            </div>
+          </div>
+      </div>
+        </div>
+      </div>
+      <div class="us-section container bg-white col-lg-12 mt-2 mb-2 border-bottom">
+        <div class="row">
+          <div class="col-4 mt-4">
+              <div class="card border-none">
+                <img class="card-img-top p-3" src="https://d.newsweek.com/en/full/1655914/coronavirus-us.webp?w=397&h=265&f=84a0791253a16dbc0e21365f189945ee" alt="China Recovery">
+                <div class="card-body pt-0">
+                  <h5 class="card-title font-weight-bolder">Ohio Reports Record COVID Hospitalizations, While PA Sees Most Since June</h5>
+                </div>
+              </div>
+          </div>
+          <div class="col-4 mt-4">
+            <div class="card border-none">
+              <img class="card-img-top p-3" src="https://d.newsweek.com/en/full/1655756/trump-rally-carson-city-nevada-october-18.webp?w=397&h=265&f=9c30072a69fac7f72bc8136e78935fcb" alt="China Recovery">
+              <div class="card-body pt-0">
+                <h5 class="card-title font-weight-bolder">Over 200 Protests Planned If Trump Attempts to Dispute Election Results</h5>
+              </div>
+            </div>
+        </div>
+        <div class="col-4 mt-4">
+          <div class="d-flex flex-column">
+            <div class="card-horizontal p-3 border-bottom">
+              <div class="card-img-left"></div>
+              <div class="card-body-right">
+                <h5 class="card-title font-weight-bolder">Massive Stimulus Spending Is the Only Fix for Ailing Economy, Experts Say</h5>
+              </div>
+            </div>
+            <div class="card-horizontal p-3 border-bottom">
+              <div class="card-img-left"></div>
+              <div class="card-body-right">
+                <h5 class="card-title font-weight-bolder">Massive Stimulus Spending Is the Only Fix for Ailing Economy, Experts Say</h5>
+              </div>
+            </div>
+            <div class="card-horizontal p-3">
+              <div class="card-img-left"></div>
+              <div class="card-body-right">
+                <h5 class="card-title font-weight-bolder">Massive Stimulus Spending Is the Only Fix for Ailing Economy, Experts Say</h5>
+              </div>
+            </div>
+          </div>
+      </div>
+        </div>
+      </div>
+      <div class="us-section container bg-white col-lg-12 mt-2 mb-2 border-bottom">
+        <div class="row">
+          <div class="col-4 mt-4">
+              <div class="card border-none">
+                <img class="card-img-top p-3" src="https://d.newsweek.com/en/full/1655914/coronavirus-us.webp?w=397&h=265&f=84a0791253a16dbc0e21365f189945ee" alt="China Recovery">
+                <div class="card-body pt-0">
+                  <h5 class="card-title font-weight-bolder">Ohio Reports Record COVID Hospitalizations, While PA Sees Most Since June</h5>
+                </div>
+              </div>
+          </div>
+          <div class="col-4 mt-4">
+            <div class="card border-none">
+              <img class="card-img-top p-3" src="https://d.newsweek.com/en/full/1655756/trump-rally-carson-city-nevada-october-18.webp?w=397&h=265&f=9c30072a69fac7f72bc8136e78935fcb" alt="China Recovery">
+              <div class="card-body pt-0">
+                <h5 class="card-title font-weight-bolder">Over 200 Protests Planned If Trump Attempts to Dispute Election Results</h5>
+              </div>
+            </div>
+        </div>
+        <div class="col-4 mt-4">
+          <div class="d-flex flex-column">
+            <div class="card-horizontal p-3 border-bottom">
+              <div class="card-img-left"></div>
+              <div class="card-body-right">
+                <h5 class="card-title font-weight-bolder">Massive Stimulus Spending Is the Only Fix for Ailing Economy, Experts Say</h5>
+              </div>
+            </div>
+            <div class="card-horizontal p-3 border-bottom">
+              <div class="card-img-left"></div>
+              <div class="card-body-right">
+                <h5 class="card-title font-weight-bolder">Massive Stimulus Spending Is the Only Fix for Ailing Economy, Experts Say</h5>
+              </div>
+            </div>
+            <div class="card-horizontal p-3">
+              <div class="card-img-left"></div>
+              <div class="card-body-right">
+                <h5 class="card-title font-weight-bolder">Massive Stimulus Spending Is the Only Fix for Ailing Economy, Experts Say</h5>
+              </div>
+            </div>
+          </div>
+      </div>
+        </div>
+      </div>
+      <div class="us-section container bg-white col-lg-12 mt-2 mb-2 border-bottom">
+        <div class="row">
+          <div class="col-4 mt-4">
+              <div class="card border-none">
+                <img class="card-img-top p-3" src="https://d.newsweek.com/en/full/1655914/coronavirus-us.webp?w=397&h=265&f=84a0791253a16dbc0e21365f189945ee" alt="China Recovery">
+                <div class="card-body pt-0">
+                  <h5 class="card-title font-weight-bolder">Ohio Reports Record COVID Hospitalizations, While PA Sees Most Since June</h5>
+                </div>
+              </div>
+          </div>
+          <div class="col-4 mt-4">
+            <div class="card border-none">
+              <img class="card-img-top p-3" src="https://d.newsweek.com/en/full/1655756/trump-rally-carson-city-nevada-october-18.webp?w=397&h=265&f=9c30072a69fac7f72bc8136e78935fcb" alt="China Recovery">
+              <div class="card-body pt-0">
+                <h5 class="card-title font-weight-bolder">Over 200 Protests Planned If Trump Attempts to Dispute Election Results</h5>
+              </div>
+            </div>
+        </div>
+        <div class="col-4 mt-4">
+          <div class="d-flex flex-column">
+            <div class="card-horizontal p-3 border-bottom">
+              <div class="card-img-left"></div>
+              <div class="card-body-right">
+                <h5 class="card-title font-weight-bolder">Massive Stimulus Spending Is the Only Fix for Ailing Economy, Experts Say</h5>
+              </div>
+            </div>
+            <div class="card-horizontal p-3 border-bottom">
+              <div class="card-img-left"></div>
+              <div class="card-body-right">
+                <h5 class="card-title font-weight-bolder">Massive Stimulus Spending Is the Only Fix for Ailing Economy, Experts Say</h5>
+              </div>
+            </div>
+            <div class="card-horizontal p-3">
+              <div class="card-img-left"></div>
+              <div class="card-body-right">
+                <h5 class="card-title font-weight-bolder">Massive Stimulus Spending Is the Only Fix for Ailing Economy, Experts Say</h5>
+              </div>
+            </div>
+          </div>
+      </div>
+        </div>
+      </div>
+      <div class="us-section container bg-white col-lg-12 mt-2 mb-2 border-bottom">
+        <div class="row">
+          <div class="col-4 mt-4">
+              <div class="card border-none">
+                <img class="card-img-top p-3" src="https://d.newsweek.com/en/full/1655914/coronavirus-us.webp?w=397&h=265&f=84a0791253a16dbc0e21365f189945ee" alt="China Recovery">
+                <div class="card-body pt-0">
+                  <h5 class="card-title font-weight-bolder">Ohio Reports Record COVID Hospitalizations, While PA Sees Most Since June</h5>
+                </div>
+              </div>
+          </div>
+          <div class="col-4 mt-4">
+            <div class="card border-none">
+              <img class="card-img-top p-3" src="https://d.newsweek.com/en/full/1655756/trump-rally-carson-city-nevada-october-18.webp?w=397&h=265&f=9c30072a69fac7f72bc8136e78935fcb" alt="China Recovery">
+              <div class="card-body pt-0">
+                <h5 class="card-title font-weight-bolder">Over 200 Protests Planned If Trump Attempts to Dispute Election Results</h5>
+              </div>
+            </div>
+        </div>
+        <div class="col-4 mt-4">
+          <div class="d-flex flex-column">
+            <div class="card-horizontal p-3 border-bottom">
+              <div class="card-img-left"></div>
+              <div class="card-body-right">
+                <h5 class="card-title font-weight-bolder">Massive Stimulus Spending Is the Only Fix for Ailing Economy, Experts Say</h5>
+              </div>
+            </div>
+            <div class="card-horizontal p-3 border-bottom">
+              <div class="card-img-left"></div>
+              <div class="card-body-right">
+                <h5 class="card-title font-weight-bolder">Massive Stimulus Spending Is the Only Fix for Ailing Economy, Experts Say</h5>
+              </div>
+            </div>
+            <div class="card-horizontal p-3">
+              <div class="card-img-left"></div>
+              <div class="card-body-right">
+                <h5 class="card-title font-weight-bolder">Massive Stimulus Spending Is the Only Fix for Ailing Economy, Experts Say</h5>
+              </div>
+            </div>
+          </div>
+      </div>
+        </div>
+      </div>
+      <div class="us-section container bg-white col-lg-12 mt-2 mb-2 border-bottom">
+        <div class="row">
+          <div class="col-4 mt-4">
+              <div class="card border-none">
+                <img class="card-img-top p-3" src="https://d.newsweek.com/en/full/1655914/coronavirus-us.webp?w=397&h=265&f=84a0791253a16dbc0e21365f189945ee" alt="China Recovery">
+                <div class="card-body pt-0">
+                  <h5 class="card-title font-weight-bolder">Ohio Reports Record COVID Hospitalizations, While PA Sees Most Since June</h5>
+                </div>
+              </div>
+          </div>
+          <div class="col-4 mt-4">
+            <div class="card border-none">
+              <img class="card-img-top p-3" src="https://d.newsweek.com/en/full/1655756/trump-rally-carson-city-nevada-october-18.webp?w=397&h=265&f=9c30072a69fac7f72bc8136e78935fcb" alt="China Recovery">
+              <div class="card-body pt-0">
+                <h5 class="card-title font-weight-bolder">Over 200 Protests Planned If Trump Attempts to Dispute Election Results</h5>
+              </div>
+            </div>
+        </div>
+        <div class="col-4 mt-4">
+          <div class="d-flex flex-column">
+            <div class="card-horizontal p-3 border-bottom">
+              <div class="card-img-left"></div>
+              <div class="card-body-right">
+                <h5 class="card-title font-weight-bolder">Massive Stimulus Spending Is the Only Fix for Ailing Economy, Experts Say</h5>
+              </div>
+            </div>
+            <div class="card-horizontal p-3 border-bottom">
+              <div class="card-img-left"></div>
+              <div class="card-body-right">
+                <h5 class="card-title font-weight-bolder">Massive Stimulus Spending Is the Only Fix for Ailing Economy, Experts Say</h5>
+              </div>
+            </div>
+            <div class="card-horizontal p-3">
+              <div class="card-img-left"></div>
+              <div class="card-body-right">
+                <h5 class="card-title font-weight-bolder">Massive Stimulus Spending Is the Only Fix for Ailing Economy, Experts Say</h5>
+              </div>
+            </div>
+          </div>
+      </div>
+        </div>
+      </div>
+      <div class="container bg-white col-lg-12 max-width p-0">
+        <div class="row bg-white">
+          <div class="col-lg-8 bg-light">
+            <div class="card mb-3 p-3">
+              <h5 class="card-title text-danger">SUBSCRIBE</h5>
+              <div class="row no-gutter">
+                <div class="col-md-4">
+                  <img src="https://d.newsweek.com/en/full/1643943/cover-october-09-16-2020.jpg?w=170&q=95&f=f8144d83a028a40fe7ea6a5ed615ded7" class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">In-depth Stories You Don't See Elsewhere About Topics You Want to Read!</h5>
+                    <p class="card-text">
+                      All Access + Weekly Delivery.
+                      Choose A Membership That's Perfect for You!</p>
+                    <a href="#" class="btn btn-danger rounded">SUBSCRIBE <i class="far fa-angle-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card mb-3 p-3 shadow">
+              <h5 class="card-title text-danger">NEWSLETTER</h5>
+              <div class="row no-gutter">
+                <div class="col-md-4 d-flex align-items-center">
+                  <img src="https://d.newsweek.com/en/full/1653518/cover-october-23-2020.jpg?w=170&q=95&f=b35fed654708fe1b577840164dadeacf" alt="alt" class="card-img">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">The Starting 5</h5>
+                    <p class="card-text">See why nearly a quarter of a million subscribers begin their day with the Starting 5.</p>
+                    <form>
+                      <input type="email" placeholder="Email Address" class="col-12">
+                      <button type="button" class="btn-danger border-0 rounded px-4 py-1 mt-2 text-center col-12">
+                        <span class="text-black font-weight-bolder">FREE SIGN UP <i class="far fa-angle-right"></i></span>
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
-    <footer class="col-lg-12"></footer>
+    <footer class="col-lg-12 bg-white max-width p-0">
+      
+    </footer>
   </div>
 </body>
 </html>

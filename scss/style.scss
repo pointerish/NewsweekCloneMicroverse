@@ -16,8 +16,10 @@ hr {
   border-top: 3px solid grey;
 }
 
-.grey {
-  color: grey;
+.stories-grid {
+  display: grid;
+  grid-template-areas: 
+    "featured-stories top-stories debate-stories";
 }
 
 .card-img-left {
@@ -86,4 +88,12 @@ hr {
 
 .last-debate {
   border-width: 8px !important;
+}
+
+.bg-image-newsletter {
+  background-image: url('https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&h=265&q=90&f=742bce9a6f72dd8f19ba2e7fd5db06e5');
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+  max-height: 100%;
 }
