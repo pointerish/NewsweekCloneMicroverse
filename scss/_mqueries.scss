@@ -37,7 +37,13 @@ and (orientation : landscape) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : portrait) {
-  
+  .red-nav {
+    max-height: 5%;
+  }
+
+  .burger-menu {
+    font-size: 4rem;
+  }
 }
 
 /* Desktops and laptops ----------- */
