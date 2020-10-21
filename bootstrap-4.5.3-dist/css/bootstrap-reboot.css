@@ -48,6 +48,11 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5rem;
 }
 
+h6:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
 p {
   margin-top: 0;
   margin-bottom: 1rem;

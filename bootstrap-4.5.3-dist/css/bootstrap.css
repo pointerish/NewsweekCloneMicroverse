@@ -4756,6 +4756,10 @@ input[type="button"].btn-block {
   border-top: 0;
 }
 
+.card-custom > .card-body > p {
+  font-size: 0.4em;
+}
+
 .card-body {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;

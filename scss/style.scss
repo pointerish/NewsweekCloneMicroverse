@@ -1,6 +1,5 @@
 @import 'config';
 @import 'navbar';
-@import 'mqueries';
 
 .main-container {
   width: 100%;
@@ -12,14 +11,9 @@ body {
   font-family: $font-stack;
 }
 
-hr {
-  border-top: 3px solid grey;
-}
-
 .stories-grid {
   display: grid;
-  grid-template-areas: 
-    "featured-stories top-stories debate-stories";
+  grid-template-areas: "featured-stories top-stories debate-stories";
 }
 
 .card-img-left {
@@ -37,9 +31,8 @@ hr {
 
 .card-custom {
   display: grid;
-  grid-template-areas:
-   "card-img-top"
-   "card-body";
+  grid-template-rows: 30% 70%;
+  grid-template-areas: "card-img-top" "card-body";
 }
 
 .card-custom > div > p {
@@ -62,38 +55,10 @@ hr {
   text-decoration-color: red;
 }
 
+.card-text {
+  @include font-size(0.9rem);
+}
+
 .card-text-ms {
   font-size: 0.4rem;
-}
-
-.vs-container {
-  z-index: 2;
-}
-
-.vs-container::before {
-  margin-bottom: 2.5px;
-  position: absolute;
-  content: " ";
-  display: block;
-  background-color: var(--gray-one);
-}
-
-.vs-container::after {
-  margin-bottom: 2.5px;
-  position: absolute;
-  content: " ";
-  display: block;
-  background-color: var(--gray-one);
-}
-
-.last-debate {
-  border-width: 8px !important;
-}
-
-.bg-image-newsletter {
-  background-image: url('https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&h=265&q=90&f=742bce9a6f72dd8f19ba2e7fd5db06e5');
-  background-size: cover;
-  background-position: center;
-  max-width: 100%;
-  max-height: 100%;
 }
