@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   border: none;
+  overflow-x: hidden;
 }
 
 li {
@@ -71,6 +72,39 @@ li {
   font-size: 5rem;
 }
 
+/*
+ * Author: http://stuffandnonsense.co.uk/blog/about/hardboiled_css3_media_queries/
+ */
+/* Smartphones (portrait and landscape) ----------- */
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  /* Styles */
+}
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  /* Styles */
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles */
+}
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* Styles */
+}
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* Styles */
+}
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  /* Styles */
+}
+/* Large screens ----------- */
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* Styles */
+}
 .main-container {
   width: 100%;
   padding: 0;
@@ -87,17 +121,19 @@ h4.card-title:hover,
   text-decoration-color: red;
 }
 
-.stories-grid {
-  display: grid;
-  grid-template-areas: "featured-stories top-stories debate-stories";
-}
-
 .card-img-left {
   background-image: url("https://d.newsweek.com/en/full/1654970/mnuchin.webp?w=790&f=e084f7792793750e01514706215dd25a");
   background-size: cover;
   background-position: center center;
   max-width: 100%;
   max-height: 100%;
+}
+
+.card-title {
+  font-size: 1rem;
+}
+.card-title span {
+  display: inline-block;
 }
 
 .card-horizontal {

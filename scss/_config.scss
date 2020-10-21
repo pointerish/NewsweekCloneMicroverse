@@ -2,8 +2,6 @@
 
 $font-stack: 'Roboto Condensed', sans-serif;
 $big-screen-width: 1000px;
-$tablet-width: 700px;
-$mobile-width: 300px;
 
 :root {
   font-family: $font-stack;
@@ -11,6 +9,7 @@ $mobile-width: 300px;
   padding: 0;
   box-sizing: border-box;
   border: none;
+  overflow-x: hidden;
 }
 
 li {
