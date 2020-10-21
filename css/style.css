@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed");
+
 :root {
   font-family: "Roboto Condensed", sans-serif;
   margin: 0;
@@ -19,12 +20,14 @@ li {
   font-weight: bolder;
 }
 
-.login-subscribe a, .login-subscribe button {
+.login-subscribe a,
+.login-subscribe button {
   color: white;
   text-decoration: none;
   font-weight: bolder;
   letter-spacing: 0.1rem;
 }
+
 .login-subscribe button {
   color: black;
   letter-spacing: 0;
@@ -75,19 +78,21 @@ li {
 
 @media screen and (min-width: 1000px) {
   .burger-menu,
-.user-icon {
+  .user-icon {
     display: none;
   }
 }
+
 @media screen and (min-width: 700px) and (max-width: 1000px) {
   .bottom-nav,
-.weather-date {
+  .weather-date {
     display: none;
   }
 }
+
 @media screen and (min-width: 300px) and (max-width: 700px) {
   .bottom-nav,
-.weather-date {
+  .weather-date {
     display: none;
   }
 
@@ -109,6 +114,7 @@ li {
     height: 60px;
   }
 }
+
 .main-container {
   width: 100%;
   padding: 0;
@@ -175,5 +181,3 @@ body {
   display: block;
   padding-bottom: 0.3rem;
 }
-
-/*# sourceMappingURL=style.css.map */
