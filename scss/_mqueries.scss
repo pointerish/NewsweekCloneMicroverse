@@ -41,8 +41,8 @@ and (orientation : portrait) {
     max-height: 5%;
   }
 
-  .burger-menu {
-    font-size: 4rem;
+  .burger-menu > i {
+    font-size: 24px;
   }
 }
 
@@ -55,6 +55,7 @@ and (min-width : 1224px) {
 /* Large screens ----------- */
 @media only screen 
 and (min-width : 1824px) {
+  
 
 }
 

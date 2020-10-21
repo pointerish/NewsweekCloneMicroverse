@@ -13,9 +13,9 @@
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
-<body class="bg-light col-xs-12 col-md-12 col-lg-12 col-xl-12 p-0">
+<body class="bg-light col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0 m-0">
   <div class="main-container container-fluid col-xl-8 col-lg-12 col-xs-12 max-width min-width-container nav-static p-0">
-    <header class="nav-container container-fluid col-12 p-0">
+    <header class="nav-container container-fluid col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0 m-0">
         <nav class="navbar col red-nav">
           <div class="weather-date flex-column justify-content-space-between text-white">
               <span class="weather font-weight-bolder"><i class="fas fa-cloud"></i> 28° Managua, NI <i class="far fa-angle-right"></i></span>
@@ -26,48 +26,52 @@
               <img class="img-fluid" id="newsweek-logo" src="https://upload.wikimedia.org/wikipedia/commons/d/db/Newsweek_Logo.svg" alt="Newsweek Logo">
             </a>
           </div>
-          <div class="user-icon d-lg-none col-xs-1">
-            <i class="fas fa-user"></i>
+          <div class="user-icon d-md-none d-lg-none col-xs-1">
+            <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-person-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+            </svg>
           </div>
           <div class="login-subscribe col-xs-4">
             <a href="#">LOGIN</a>
             <button type="button" class="btn btn-warning rounded-pill">SUBSCRIBE <i class="far fa-angle-right"></i></button>
           </div>
           <div class="burger-menu d-lg-none col-xs-1">
-            <i class="fas fa-bars"></i>
+            <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-list" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
           </div>
       </nav>
       <nav class="bottom-nav d-xl-block d-lg-block d-md-none d-xs-none d-sm-none navbar-expand-lg m-0">
         <ul class="navbar">
           <li class="nav-item">
-            <a class="nav-link" href="#">U.S.</a>
+            <a class="nav-link p-lg-1" href="#">U.S.</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link border-left text-decoration-none font-weight-bolder text-black" href="#">Business</a>
+            <a class="nav-link border-left text-decoration-none font-weight-bolder text-black p-lg-1 pl-xl-4" href="#">Business</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link border-left text-decoration-none font-weight-bolder text-black" href="#">Tech & Science</a>
+            <a class="nav-link border-left text-decoration-none font-weight-bolder text-black p-lg-1 pl-xl-4" href="#">Tech & Science</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link border-left text-decoration-none font-weight-bolder text-black" href="#">Culture</a>
+            <a class="nav-link border-left text-decoration-none font-weight-bolder text-black p-lg-1 pl-xl-4" href="#">Culture</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link border-left text-decoration-none font-weight-bolder text-black" href="#">Newsgeek</a>
+            <a class="nav-link border-left text-decoration-none font-weight-bolder text-black p-lg-1 pl-xl-4" href="#">Newsgeek</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link border-left text-decoration-none font-weight-bolder text-black" href="#">Sports</a>
+            <a class="nav-link border-left text-decoration-none font-weight-bolder text-black p-lg-1 pl-xl-4" href="#">Sports</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link border-left text-decoration-none font-weight-bolder text-black" href="#">Health</a>
+            <a class="nav-link border-left text-decoration-none font-weight-bolder text-black p-lg-1 pl-xl-4" href="#">Health</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link border-left text-decoration-none font-weight-bolder text-black" href="#">The Debate</a>
+            <a class="nav-link border-left text-decoration-none font-weight-bolder text-black p-lg-1 pl-xl-4 text-center" href="#">The Debate</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link border-left text-decoration-none font-weight-bolder text-black" href="#">Vantage</a>
+            <a class="nav-link border-left text-decoration-none font-weight-bolder text-black p-lg-1 pl-xl-4 text-center" href="#">Vantage</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link border-left text-decoration-none font-weight-bolder text-black" href="#">Weather</a>
+            <a class="nav-link border-left text-decoration-none font-weight-bolder text-black p-lg-1  pl-xl-4 text-center" href="#">Weather</a>
           </li>
           <li class="nav-item search-nav">
             <input type="text" placeholder="Search"></input>
@@ -83,25 +87,25 @@
             <span class="nav-link text-black">TRENDING</span>
           </li>
           <li class="nav-item">
-            <a class="nav-link grey" href="#">DONALD TRUMP</a>
+            <a class="nav-link grey px-lg-3" href="#">DONALD TRUMP</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link grey" href="#">JOE BIDEN</a>
+            <a class="nav-link grey px-lg-3" href="#">JOE BIDEN</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link grey" href="#">STIMULUS PACKAGE</a>
+            <a class="nav-link grey px-lg-3" href="#">STIMULUS PACKAGE</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link grey" href="#">CORONAVIRUS</a>
+            <a class="nav-link grey px-lg-3" href="#">CORONAVIRUS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link grey" href="#">AMY CONEY BARRETT</a>
+            <a class="nav-link grey px-lg-3" href="#">AMY CONEY BARRETT</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link grey" href="#">2020 ELECTION</a>
+            <a class="nav-link grey px-lg-3" href="#">2020 ELECTION</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link grey" href="#">COUNTIES THAT COUNT</a>
+            <a class="nav-link grey px-lg-3" href="#">COUNTIES THAT COUNT</a>
           </li>
         </ul>
       </div>
@@ -165,29 +169,29 @@
                 <div class="container my-turn pt-1">
                   <span class="column-title">MY TURN</span>
                   <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-4">
                     <div class="card-custom">
                       <img class="img-fluid" src="https://d.newsweek.com/en/full/1654837/best-friends-love-relationships.webp?" alt="BFFLove">
-                      <div class="card-body p-0 m-0">
-                        <p class="card-text font-weight-bold mt-2">'I Fell in Love With My Best Friend and Finally Asked Her Out'</p>
+                      <div class="card-body p-0 m-0 mt-md-0">
+                        <p class="card-text font-weight-bold mt-md-0 mt-2">'I Fell in Love With My Best Friend and Finally Asked Her Out'</p>
                       </div>
                     </div>
                   </div>
     
-                  <div class="col-lg-4 pb-1">
+                  <div class="col-lg-4 col-md-4 pb-1">
                     <div class="card-custom">
                       <img class="img-fluid" src="https://d.newsweek.com/en/full/1654837/best-friends-love-relationships.webp?" alt="Married at 60">
-                      <div class="card-body p-0 m-0">
-                        <p class="card-text font-weight-bold mt-2">'I Had COVID, Now Food Tastes Rotten and Wine Tastes Like Oil'</p>
+                      <div class="card-body p-0 m-0 mt-md-0">
+                        <p class="card-text font-weight-bold mt-md-0 mt-2">'I Had COVID, Now Food Tastes Rotten and Wine Tastes Like Oil'</p>
                       </div>
                     </div>
                   </div>
     
-                  <div class="col-lg-4">
+                  <div class="col-lg-4 col-md-4">
                     <div class="card-custom">
                       <img class="img-fluid" src="https://d.newsweek.com/en/full/1654837/best-friends-love-relationships.webp?" alt="Brain Cancer Story">
-                      <div class="card-body p-0 m-0">
-                        <p class="card-text font-weight-bold mt-2">'I Have Terminal Brain Cancer. I Just Did An Ironman For My 5-Year-Old'</p>
+                      <div class="card-body p-0 m-0 mt-md-0">
+                        <p class="card-text font-weight-bold mt-2 mt-md-0">'I Have Terminal Brain Cancer. I Just Did An Ironman For My 5-Year-Old'</p>
                       </div>
                     </div>
                   </div>
@@ -195,9 +199,9 @@
                 </div>
     
                 <div class="container my-turn pt-5">
-                  <span class="column-title">CULTURE & TRAVEL</span>
+                  <p class="column-title">CULTURE & TRAVEL</p>
                   <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-4">
                     <div class="card-custom">
                       <img class="img-fluid" src="https://d.newsweek.com/en/full/1654837/best-friends-love-relationships.webp?" alt="BFFLove">
                       <div class="card-body p-0 m-0">
@@ -206,7 +210,7 @@
                     </div>
                   </div>
     
-                  <div class="col-lg-4">
+                  <div class="col-lg-4 col-md-4">
                     <div class="card-custom">
                       <img class="img-fluid" src="https://d.newsweek.com/en/full/1654837/best-friends-love-relationships.webp?" alt="COVID Story">
                       <div class="card-body p-0 m-0">
@@ -215,7 +219,7 @@
                     </div>
                   </div>
     
-                  <div class="col-lg-4">
+                  <div class="col-lg-4 col-md-4">
                     <div class="card-custom">
                       <img class="img-fluid" src="https://d.newsweek.com/en/full/1654837/best-friends-love-relationships.webp?" alt="Brain Cancer Story">
                       <div class="card-body p-0 m-0">
@@ -342,33 +346,42 @@
           <div class="debate-stories">
             <span class="column-title border-bottom-title">THE DEBATE</span>
             <hr class="border-top">
-            <div class="card-horizontal pl-0">
-              <img class="img-fluid" src="https://d.newsweek.com/en/full/1590519/claire-finkelstein-richard-w-painter-2.webp?w=150&h=150&f=890e9e80b6653bf527efb8506fb2601b" alt="BidenTrump">
-              <div class="card-body-right">
-                <p class="card-title-ms font-weight-bolder m-0">McConnell's Rush to Confirm Barrett Ignores Crucial Questions of Principle</p>
-                <p class="card-text-ms">BY CLAIRE O. FINKELSTEIN AND RICHARD W. PAINTER</p>
+            <div class="card mb-3 p-0">
+              <div class="row no-gutter">
+                <div class="col-md-2 col-lg-3">
+                  <img src="https://d.newsweek.com/en/full/1590519/claire-finkelstein-richard-w-painter-2.webp?w=150&h=150&f=890e9e80b6653bf527efb8506fb2601b" class="card-img" alt="...">
+                </div>
+                <div class="col-md-10 col-lg-9 p-0">
+                  <div class="card-body mt-md-3 mt-lg-0 p-0">
+                    <h5 class="card-title">McConnell's Rush to Confirm Barrett Ignores Crucial Questions of Principle</h5>
+                    <p class="card-text">BY CLAIRE O. FINKELSTEIN AND RICHARD W. PAINTER</p>
+                  </div>
+                </div>
               </div>
             </div>
+          </div>
             <div class="d-flex flex-column align-items-center vs-container">
               <h5 class="text-light font-weight-bold text-center p-1 bg-dark rounded-circle">VS</h5>
             </div>
             <div class="container pb-4 last-debate border-bottom">
-            <div class="card-horizontal-lr p-1 row h-15">
-              <div class="col-lg-9 p-0">
-              <div class="card-body-left">
-                <p class="card-title-ms font-weight-bolder m-0">On Supreme Court Nominations, All that Counts is the Constitution</p>
-                <p class="card-text-ms">BY ANDREW C. MCCARTHY</p>
+              <div class="card mb-3 p-3">
+                <div class="row no-gutter">
+                  <div class="col-md-10 col-lg-9 p-0">
+                    <div class="card-body mt-md-3 mt-lg-0 p-0">
+                      <h5 class="card-title">McConnell's Rush to Confirm Barrett Ignores Crucial Questions of Principle</h5>
+                      <p class="card-text">BY CLAIRE O. FINKELSTEIN AND RICHARD W. PAINTER</p>
+                    </div>
+                  </div>
+                  <div class="col-md-2 col-lg-3">
+                    <img src="https://d.newsweek.com/en/full/1590519/claire-finkelstein-richard-w-painter-2.webp?w=150&h=150&f=890e9e80b6653bf527efb8506fb2601b" class="card-img" alt="...">
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="col-lg-3 p-2">
-              <img class="img-fluid pt-0" src="https://d.newsweek.com/en/full/1639701/andrew-c-mccarthy.webp?w=150&h=150&f=3e552338567abfe5626df5a9715e8d4f" alt="BidenTrump">
-            </div>
-            </div>
           </div>
           <p class="column-title border-bottom-title mt-3">OPINION</p>
           <div class="card-horizontal pl-0">
             <img class="img-fluid" src="https://d.newsweek.com/en/full/1590519/claire-finkelstein-richard-w-painter-2.webp?w=150&h=150&f=890e9e80b6653bf527efb8506fb2601b" alt="BidenTrump">
-            <div class="card-body-right">
+            <div class="card-body-right mt-md-4 mt-lg-0">
               <p class="card-title-ms font-weight-bolder m-0">McConnell's Rush to Confirm Barrett Ignores Crucial Questions of Principle</p>
               <p class="card-text-ms">BY CLAIRE O. FINKELSTEIN AND RICHARD W. PAINTER</p>
             </div>
@@ -376,7 +389,7 @@
           <hr class="border-top">
           <div class="card-horizontal pl-0">
             <img class="img-fluid" src="https://d.newsweek.com/en/full/1590519/claire-finkelstein-richard-w-painter-2.webp?w=150&h=150&f=890e9e80b6653bf527efb8506fb2601b" alt="BidenTrump">
-            <div class="card-body-right">
+            <div class="card-body-right mt-md-4 mt-lg-0">
               <p class="card-title-ms font-weight-bolder m-0">McConnell's Rush to Confirm Barrett Ignores Crucial Questions of Principle</p>
               <p class="card-text-ms">BY CLAIRE O. FINKELSTEIN AND RICHARD W. PAINTER</p>
             </div>
@@ -384,7 +397,7 @@
           <hr class="border-top">
           <div class="card-horizontal pl-0">
             <img class="img-fluid" src="https://d.newsweek.com/en/full/1590519/claire-finkelstein-richard-w-painter-2.webp?w=150&h=150&f=890e9e80b6653bf527efb8506fb2601b" alt="BidenTrump">
-            <div class="card-body-right">
+            <div class="card-body-right mt-md-4 mt-lg-0">
               <p class="card-title-ms font-weight-bolder m-0">McConnell's Rush to Confirm Barrett Ignores Crucial Questions of Principle</p>
               <p class="card-text-ms">BY CLAIRE O. FINKELSTEIN AND RICHARD W. PAINTER</p>
             </div>
@@ -392,7 +405,7 @@
           <hr class="border-top">
           <div class="card-horizontal pl-0">
             <img class="img-fluid" src="https://d.newsweek.com/en/full/1590519/claire-finkelstein-richard-w-painter-2.webp?w=150&h=150&f=890e9e80b6653bf527efb8506fb2601b" alt="BidenTrump">
-            <div class="card-body-right">
+            <div class="card-body-right mt-md-4 mt-lg-0">
               <p class="card-title-ms font-weight-bolder m-0 red-hover">McConnell's Rush to Confirm Barrett Ignores Crucial Questions of Principle</p>
               <p class="card-text-ms">BY CLAIRE O. FINKELSTEIN AND RICHARD W. PAINTER</p>
             </div>
@@ -400,7 +413,7 @@
           <hr class="border-top">
           <div class="card-horizontal pl-0">
             <img class="img-fluid" src="https://d.newsweek.com/en/full/1590519/claire-finkelstein-richard-w-painter-2.webp?w=150&h=150&f=890e9e80b6653bf527efb8506fb2601b" alt="BidenTrump">
-            <div class="card-body-right">
+            <div class="card-body-right mt-md-4 mt-lg-0">
               <p class="card-title-ms font-weight-bolder m-0">McConnell's Rush to Confirm Barrett Ignores Crucial Questions of Principle</p>
               <p class="card-text-ms">BY CLAIRE O. FINKELSTEIN AND RICHARD W. PAINTER</p>
             </div>
@@ -408,13 +421,13 @@
           <hr class="border-top">
           <div class="card-horizontal pl-0">
             <img class="img-fluid" src="https://d.newsweek.com/en/full/1590519/claire-finkelstein-richard-w-painter-2.webp?w=150&h=150&f=890e9e80b6653bf527efb8506fb2601b" alt="BidenTrump">
-            <div class="card-body-right">
+            <div class="card-body-right mt-md-4 mt-lg-0">
               <p class="card-title-ms font-weight-bolder m-0">McConnell's Rush to Confirm Barrett Ignores Crucial Questions of Principle</p>
               <p class="card-text-ms">BY CLAIRE O. FINKELSTEIN AND RICHARD W. PAINTER</p>
             </div>
           </div>
 
-          <div class="container col-10 px-2 py-4 bg-light border rounded text-center shadow">
+          <div class="container col-10 px-2 py-4 bg-light border rounded text-center shadow mt-md-4">
             <div class="container d-flex d-flex align-items-center text-left">
               <img class="bg-danger" src="favicon.png" alt="logo">
               <h5 class="font-weight-bolder ml-3 mt-2">Start your day with our top 5 articles</h5>
@@ -429,7 +442,7 @@
 
             </div>
           </div>
-          <div class="container bg-white col-12 text-center border-bottom">
+          <div class="container bg-white col-8 text-center border-bottom mt-md-4 pb-md-4">
             <div class="container d-flex d-flex justify-content-center text-center">
               <img class="bg-danger" src="favicon.png" alt="logo">
               <h5 class="font-weight-bolder ml-3 mt-2">IN THE MAGAZINE</h5>
@@ -438,7 +451,7 @@
       </div>
       </div>
       <!--Three Column Section Ends Here-->
-      <div class="magazine container bg-white col-12 mt-1 mb-4">
+      <div class="magazine container bg-white col-8 mt-1 mb-4">
         <div class="row pt-4">
           <div class="col-3 col-xs-1">
             <div class="card">
@@ -532,13 +545,13 @@
           </div>
         </div>
       </div>
-      <div class="container bg-white col-12 text-center border-bottom">
+      <div class="container bg-white col-8 text-center border-bottom">
         <div class="container d-flex d-flex justify-content-center text-center">
           <img class="bg-danger" src="favicon.png" alt="logo">
           <h5 class="font-weight-bolder ml-3 mt-2">EDITOR'S PICK</h5>
         </div>
       </div>
-      <div class="editorpick container bg-white col-lg-12 mt-1 mb-4 border-bottom">
+      <div class="editorpick container bg-white col-lg-8 mt-1 mb-4 border-bottom">
         <div class="row pt-4">
           <div class="col-3 col-md-6 mt-4">
             <div class="card border-none">
@@ -616,7 +629,7 @@
           </div>
         </div>
       </div>
-      <div class="us-section container bg-white col-lg-12 mt-2 mb-2 border-bottom">
+      <div class="us-section container bg-white col-lg-8 mt-2 mb-2 border-bottom">
         <div class="row">
           <div class="col-4 mt-4">
               <div class="card border-none">
@@ -658,7 +671,7 @@
       </div>
         </div>
       </div>
-      <div class="us-section container bg-white col-lg-12 mt-2 mb-2 border-bottom">
+      <div class="us-section container bg-white col-lg-8 mt-2 mb-2 border-bottom">
         <div class="row">
           <div class="col-4 mt-4">
               <div class="card border-none">
@@ -700,7 +713,7 @@
       </div>
         </div>
       </div>
-      <div class="us-section container bg-white col-lg-12 mt-2 mb-2 border-bottom">
+      <div class="us-section container bg-white col-lg-8 mt-2 mb-2 border-bottom">
         <div class="row">
           <div class="col-4 mt-4">
               <div class="card border-none">
@@ -742,7 +755,7 @@
       </div>
         </div>
       </div>
-      <div class="us-section container bg-white col-lg-12 mt-2 mb-2 border-bottom">
+      <div class="us-section container bg-white col-lg-8 mt-2 mb-2 border-bottom">
         <div class="row">
           <div class="col-4 mt-4">
               <div class="card border-none">
@@ -784,7 +797,7 @@
       </div>
         </div>
       </div>
-      <div class="us-section container bg-white col-lg-12 mt-2 mb-2 border-bottom">
+      <div class="us-section container bg-white col-lg-8 mt-2 mb-2 border-bottom">
         <div class="row">
           <div class="col-4 mt-4">
               <div class="card border-none">
@@ -826,7 +839,7 @@
       </div>
         </div>
       </div>
-      <div class="us-section container bg-white col-lg-12 mt-2 mb-2 border-bottom">
+      <div class="us-section container bg-white col-lg-8 mt-2 mb-2 border-bottom">
         <div class="row">
           <div class="col-4 mt-4">
               <div class="card border-none">
@@ -868,7 +881,7 @@
       </div>
         </div>
       </div>
-      <div class="container bg-white col-lg-12 max-width p-0">
+      <div class="container bg-white col-lg-8 max-width p-0">
         <div class="row bg-white">
           <div class="col-lg-8 bg-light">
             <div class="card mb-3 p-3">
@@ -914,8 +927,19 @@
         </div>
       </div>
     </main>
-    <footer class="col-lg-12 bg-white max-width p-0">
+    <footer class="container-fluid col-xl-8 col-lg-12 col-xs-12 max-width min-width-container nav-static p-0 bg-white">
+      <div class="col-lg-12 d-flex justify-content-space-between">
+        <div class="d-flex">
+          <a class="navbar-brand" href="https://www.newsweek.com/">
+            <svg width="15em" height="3em" fill="red" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 395.6 60" xml:space="preserve"><g><path class="st0" d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7"></path></g></svg>
+          </a>
+          <p class="text-secondary pt-10">© 2020 NEWSWEEK DIGITAL LLC</p>
+        </div>
+        <div>
+          <ul></ul>
+        </div>
 
+      </div>
     </footer>
   </div>
 </body>
