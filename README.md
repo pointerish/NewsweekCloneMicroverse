@@ -10,7 +10,7 @@ This is a responsive site and will scale as needed to different devices.
 
 This was done for learning purposes using Bootstrap.
 
-![desktop](screenshots/desktop.png)
+![desktop](newsweek-screenshot.png)
 
 ## Built With
 
@@ -46,3 +46,7 @@ Give a ⭐️ if you like this project!
 ## License
 
 This project is [MIT](./LICENSE) licensed.
+
+## Acknowledgements
+
+Bootstrap is nice and the people who made it are nice too. 
