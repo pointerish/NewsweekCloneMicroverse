@@ -267,12 +267,21 @@ h4.card-title:hover,
   }
 
   .trademark {
-    margin-right: 16.6em;
-    margin-bottom: 0;
+    align-self: start;
+    font-size: 0.9em;
   }
 
   .footer-icons {
     display: flex;
     justify-content: flex-start !important;
+  }
+
+  .editions > ul > li > a {
+    font-size: 0.9em;
+  }
+
+  .bottom-footer-links > ul > li > a,
+  .editions > ul > li > a {
+    border: 0 !important;
   }
 }
