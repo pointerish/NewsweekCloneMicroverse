@@ -9,6 +9,10 @@ $font-stack: 'Roboto Condensed', sans-serif;
   box-sizing: border-box;
   border: none;
   overflow-x: hidden;
+
+  body.main-container {
+    width: 100vw;
+  }
 }
 
 li {

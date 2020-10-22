@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed");
+
 :root {
   font-family: "Roboto Condensed", sans-serif;
   margin: 0;
@@ -8,12 +9,12 @@
   overflow-x: hidden;
 }
 
-li {
-  list-style-type: none;
+:root body.main-container {
+  width: 100vw;
 }
 
-.red-nav {
-  height: 20%;
+li {
+  list-style-type: none;
 }
 
 .red-hover:hover {
@@ -37,6 +38,7 @@ li {
   font-weight: bolder;
   letter-spacing: 0.1rem;
 }
+
 .login-subscribe button {
   color: black;
   letter-spacing: 0;
@@ -44,7 +46,7 @@ li {
 
 .search-nav > input {
   border: none;
-  display: inline;
+  display: inline-block;
   width: 50%;
 }
 
@@ -72,39 +74,6 @@ li {
   font-size: 5rem;
 }
 
-/*
- * Author: http://stuffandnonsense.co.uk/blog/about/hardboiled_css3_media_queries/
- */
-/* Smartphones (portrait and landscape) ----------- */
-/* Smartphones (landscape) ----------- */
-@media only screen and (min-width: 321px) {
-  /* Styles */
-}
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width: 320px) {
-  /* Styles */
-}
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* Styles */
-}
-/* iPads (landscape) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  /* Styles */
-}
-/* iPads (portrait) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  /* Styles */
-}
-/* Desktops and laptops ----------- */
-@media only screen and (min-width: 1224px) {
-  /* Styles */
-}
-/* Large screens ----------- */
-/* iPhone 4 ----------- */
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  /* Styles */
-}
 .main-container {
   width: 100%;
   padding: 0;
@@ -132,6 +101,7 @@ h4.card-title:hover,
 .card-title {
   font-size: 1rem;
 }
+
 .card-title span {
   display: inline-block;
 }
@@ -215,4 +185,102 @@ h4.card-title:hover,
   font-size: 0.8rem;
 }
 
-/*# sourceMappingURL=style.css.map */
+.f-size-1rem {
+  font-size: 1rem;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  :root {
+    overflow-x: hidden;
+    font-size: 14px;
+  }
+
+  nav.red-nav {
+    height: 15vw;
+    display: flex;
+    margin: 0;
+  }
+
+  .logo-link {
+    width: 40%;
+    margin-bottom: 1rem;
+  }
+
+  #newsweek-logo {
+    width: 100%;
+    height: 100%;
+    padding-left: 0;
+  }
+
+  .user-icon > svg {
+    width: 1.5em;
+    height: 1.7em;
+    margin-bottom: 0.8em;
+    color: white;
+  }
+
+  .login-subscribe {
+    width: 30%;
+  }
+
+  .login-subscribe > a {
+    display: none;
+  }
+
+  .login-subscribe > button {
+    font-size: 0.8em;
+    margin-bottom: 1em;
+  }
+
+  .burger-menu > svg {
+    width: 2em;
+    height: 2em;
+    margin-bottom: 0.6em;
+    color: white;
+  }
+
+  .main-container {
+    width: 100vw;
+  }
+
+  .bottom-nav,
+  .trending,
+  .weather-date {
+    display: none;
+  }
+
+  body > div > main > div:nth-child(2) > div.row.pt-4 > div.col-lg-3.col-md-5.position-sticky.p-0 > div > div:nth-child(2) > img {
+    padding-top: 1rem;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo-social,
+  .logo-trademark {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-logo > svg {
+    width: 12em;
+    height: 3em;
+  }
+
+  .trademark {
+    margin-right: 16.6em;
+    margin-bottom: 0;
+  }
+  
+  .footer-icons {
+    display: flex;
+    justify-content: flex-start !important;
+  }
+
+  .footer-icons > li > a {
+    font-size: ;
+  }
+}
