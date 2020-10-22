@@ -250,10 +250,6 @@ h4.card-title:hover,
     display: none;
   }
 
-  body > div > main > div:nth-child(2) > div.row.pt-4 > div.col-lg-3.col-md-5.position-sticky.p-0 > div > div:nth-child(2) > img {
-    padding-top: 1rem;
-  }
-
   .footer {
     display: flex;
     flex-direction: column;
@@ -274,13 +270,9 @@ h4.card-title:hover,
     margin-right: 16.6em;
     margin-bottom: 0;
   }
-  
+
   .footer-icons {
     display: flex;
     justify-content: flex-start !important;
-  }
-
-  .footer-icons > li > a {
-    font-size: ;
   }
 }
