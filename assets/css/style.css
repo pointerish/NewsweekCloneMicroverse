@@ -17,16 +17,12 @@ li {
   list-style-type: none;
 }
 
-.red-hover:hover {
-  text-decoration: underline;
-  text-decoration-color: red;
-}
-
 .red-nav {
   background-color: red;
   height: 122px;
 }
 
+/* Cheaper to do this than having `font-weight-bolder` 30 times on the HTML */
 .nav-link {
   font-weight: bolder;
 }
@@ -50,7 +46,7 @@ li {
   width: 50%;
 }
 
-.nav-link:hover {
+.red-hover:hover {
   color: red;
 }
 
@@ -139,30 +135,6 @@ h4.card-title:hover,
   font-size: 0.4rem;
 }
 
-.vs-container {
-  z-index: 2;
-}
-
-.vs-container::before {
-  margin-bottom: 2.5px;
-  position: absolute;
-  content: " ";
-  display: block;
-  background-color: var(--gray-one);
-}
-
-.vs-container::after {
-  margin-bottom: 2.5px;
-  position: absolute;
-  content: " ";
-  display: block;
-  background-color: var(--gray-one);
-}
-
-.last-debate {
-  border-width: 8px !important;
-}
-
 .bg-image-newsletter {
   background-image: url("https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&h=265&q=90&f=742bce9a6f72dd8f19ba2e7fd5db06e5");
   background-size: cover;
@@ -171,22 +143,23 @@ h4.card-title:hover,
   max-height: 100%;
 }
 
-.trademark {
-  align-self: flex-end;
-  font-size: 0.8rem;
+.bottom-overlapped {
+  width: 80%;
+  height: 100%;
+  left: 3.4em;
+  top: 1em;
 }
 
-.footer-icons > li > a {
-  font-size: 1.4rem;
-  align-self: flex-end;
+.newsletter-bg {
+  background-image: url(https://images.unsplash.com/photo-1581006573926-8553c3caebe3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&afit=crop&w=675&q=80);
+  background-position: center center;
+  background-size: cover;
 }
 
-.bottom-footer-links > ul > li > a {
-  font-size: 0.8rem;
-}
-
-.f-size-1rem {
-  font-size: 1rem;
+@media only screen and (min-device-width: 1200px) and (max-device-width: 1577px) {
+  .bottom-nav > ul > li > a {
+    padding: 0 0.5rem !important;
+  }
 }
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -198,8 +171,9 @@ h4.card-title:hover,
 
   nav.red-nav {
     height: 15vw;
-    display: flex;
-    margin: 0;
+    position: fixed;
+    top: 0;
+    z-index: 99;
   }
 
   .logo-link {
@@ -250,17 +224,6 @@ h4.card-title:hover,
     display: none;
   }
 
-  .footer {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .logo-social,
-  .logo-trademark {
-    display: flex;
-    flex-direction: column;
-  }
-
   .footer-logo > svg {
     width: 12em;
     height: 3em;
@@ -271,17 +234,7 @@ h4.card-title:hover,
     font-size: 0.9em;
   }
 
-  .footer-icons {
-    display: flex;
-    justify-content: flex-start !important;
-  }
-
   .editions > ul > li > a {
     font-size: 0.9em;
-  }
-
-  .bottom-footer-links > ul > li > a,
-  .editions > ul > li > a {
-    border: 0 !important;
   }
 }

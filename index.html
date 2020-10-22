@@ -5,20 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Newsweek - News, Analysis, Politics, Business, Technology</title>
-  <link rel="stylesheet" href="bootstrap-4.5.3-dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="bootstrap-4.5.3-dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/bootstrap-4.5.3-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap-4.5.3-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script src="bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+  <script src="assets/bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineLite.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js"></script>
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
-  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
 </head>
 <body class="bg-light">
   <div class="main-container container col-12 col-xl-8 col-lg-12 p-0">
     <header class="nav-container container-fluid col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0 m-0 shadow">
-      <nav class="navbar red-nav">
+      <nav class="navbar red-nav m-0">
         <div class="weather-date d-sm-none d-md-none d-lg-block text-white">
-          <span class="weather font-weight-bolder">28° Managua, NI</span> <p class="date">Mon, Oct 19, 2020</p>
+          <span class="weather font-weight-bolder"><i class="fas fa-cloud"></i> 28° Managua, NI</span> <p class="date">Mon, Oct 19, 2020</p>
         </div>
         <div class="col-xs-3 col-xs-5 col-sm-5 col-md-5 col-lg-4 p-0 logo-link">
           <a class="navbar-brand" href="https://www.newsweek.com/"><img class="img-fluid shadow" id="newsweek-logo" src="https://upload.wikimedia.org/wikipedia/commons/d/db/Newsweek_Logo.svg" alt="Newsweek Logo"></a>
@@ -28,7 +31,7 @@
           <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path></svg>
         </div>
         <div class="login-subscribe col-xs-4">
-          <a href="#">LOGIN</a> <button type="button" class="btn btn-warning rounded-pill">SUBSCRIBE</button>
+          <a class="d-inline-block pr-3" href="#">LOGIN</a> <button type="button" class="btn btn-warning rounded-pill">SUBSCRIBE</button>
         </div>
         <div class="burger-menu d-lg-none col-xs-1">
           <svg width="3em" height="3em" viewbox="0 0 16 16" class="bi bi-list" fill="white" xmlns="http://www.w3.org/2000/svg">
@@ -38,34 +41,34 @@
       <nav class="bottom-nav d-sm-none d-md-none d-lg-block navbar-expand-lg m-0">
         <ul class="navbar">
           <li class="nav-item">
-            <a class="nav-link text-black p-lg-1" href="#">U.S.</a>
+            <a class="nav-link text-black p-md-1 px-lg-1 px-xl-2" href="#">U.S.</a>
+          </li>
+          <li class="nav-item red-hover">
+            <a class="nav-link border-left text-decoration-none font-weight-bolder text-black p-md-1 px-lg-1 px-xl-2" href="#">Business</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link border-left text-decoration-none font-weight-bolder text-black p-lg-1 pl-xl-4" href="#">Business</a>
+            <a class="nav-link border-left text-decoration-none font-weight-bolder text-black p-md-1 px-lg-1 px-xl-2" href="#">Tech & Science</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link border-left text-decoration-none font-weight-bolder text-black p-lg-1 pl-xl-4" href="#">Tech & Science</a>
+            <a class="nav-link border-left text-decoration-none font-weight-bolder text-black p-md-1 px-lg-1 px-xl-2" href="#">Culture</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link border-left text-decoration-none font-weight-bolder text-black p-lg-1 pl-xl-4" href="#">Culture</a>
+            <a class="nav-link border-left text-decoration-none font-weight-bolder text-black p-md-1 px-lg-1 px-xl-2" href="#">Newsgeek</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link border-left text-decoration-none font-weight-bolder text-black p-lg-1 pl-xl-4" href="#">Newsgeek</a>
+            <a class="nav-link border-left text-decoration-none font-weight-bolder text-black p-md-1 px-lg-1 px-xl-2" href="#">Sports</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link border-left text-decoration-none font-weight-bolder text-black p-lg-1 pl-xl-4" href="#">Sports</a>
+            <a class="nav-link border-left text-decoration-none font-weight-bolder text-black p-md-1 px-lg-1 px-xl-2" href="#">Health</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link border-left text-decoration-none font-weight-bolder text-black p-lg-1 pl-xl-4" href="#">Health</a>
+            <a class="nav-link border-left text-decoration-none font-weight-bolder text-black p-md-1 px-lg-1 px-xl-2 text-center" href="#">The Debate</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link border-left text-decoration-none font-weight-bolder text-black p-lg-1 pl-xl-4 text-center" href="#">The Debate</a>
+            <a class="nav-link border-left text-decoration-none font-weight-bolder text-black p-md-1 px-lg-1 px-xl-2 text-center" href="#">Vantage</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link border-left text-decoration-none font-weight-bolder text-black p-lg-1 pl-xl-4 text-center" href="#">Vantage</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link border-left text-decoration-none font-weight-bolder text-black p-lg-1 pl-xl-4 text-center" href="#">Weather</a>
+            <a class="nav-link border-left text-decoration-none font-weight-bolder text-black p-md-1 px-lg-1 px-xl-2 text-center" href="#">Weather</a>
           </li>
           <li class="nav-item search-nav">
             <input type="text" placeholder="Search">
@@ -74,30 +77,30 @@
         </ul>
       </nav>
     </header>
-    <main class="container col-lg-12 bg-light p-0">
+    <main class="container col-lg-12 bg-light p-0 mt-5 mt-md-0 mt-lg-0">
       <div class="trending d-xl-block d-lg-block d-md-none d-xs-none d-sm-none col-lg-12 bg-white p-0 mt-1 hideme">
         <ul class="nav">
           <li class="nav-item"><span class="nav-link text-black">TRENDING</span></li>
           <li class="nav-item">
-            <a class="nav-link text-secondary hover-red px-lg-3" href="#">DONALD TRUMP</a>
+            <a class="nav-link text-secondary hover-red px-lg-3 px-xl-2" href="#">DONALD TRUMP</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-secondary px-lg-3" href="#">JOE BIDEN</a>
+            <a class="nav-link text-secondary px-lg-3 px-xl-2" href="#">JOE BIDEN</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-secondary px-lg-3" href="#">STIMULUS PACKAGE</a>
+            <a class="nav-link text-secondary px-lg-3 px-xl-2" href="#">STIMULUS PACKAGE</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-secondary px-lg-3" href="#">CORONAVIRUS</a>
+            <a class="nav-link text-secondary px-lg-3 px-xl-2" href="#">CORONAVIRUS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-secondary px-lg-3" href="#">AMY CONEY BARRETT</a>
+            <a class="nav-link text-secondary px-lg-3 px-xl-2" href="#">AMY CONEY BARRETT</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-secondary px-lg-3" href="#">2020 ELECTION</a>
+            <a class="nav-link text-secondary px-lg-3 px-xl-2" href="#">2020 ELECTION</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-secondary px-lg-3" href="#">COUNTIES THAT COUNT</a>
+            <a class="nav-link text-secondary px-lg-3 px-xl-2" href="#">COUNTIES THAT COUNT</a>
           </li>
         </ul>
       </div><!--Three Column Section Starts Here-->
@@ -216,7 +219,7 @@
                 <hr>
                 <div class="card mb-3 p-0 border-0">
                   <div class="row no-gutter">
-                    <div class="col-md-2 col-lg-3"><img src="https://d.newsweek.com/en/full/1655362/donald-trump-2020-election-rally.webp?w=790&amp;f=65fe4ccdfb244abbffb0c33c26eb7255" class="card-img img-fluid" alt="..."></div>
+                    <div class="col-md-2 col-lg-3 px-md-0 px-lg-0"><img src="https://d.newsweek.com/en/full/1655362/donald-trump-2020-election-rally.webp?w=790&amp;f=65fe4ccdfb244abbffb0c33c26eb7255" class="card-img img-fluid" alt="..."></div>
                     <div class="col-md-10 col-lg-9 p-0">
                       <div class="card-body mt-md-3 mt-lg-0 px-3 border-0">
                         <h6 class="card-title font-weight-bolder text-black mb-xl-0 pr-xl-4">Trump Has More Campaign Volunteers than Obama Ever Did and Democrats Worry</h6>
@@ -343,9 +346,9 @@
                 </div>
               </div>
             </div>
-            <div class="container col-10 px-2 py-4 bg-light border rounded text-center shadow mt-md-4">
-              <div class="container d-flex d-flex align-items-center text-left">
-                <img class="bg-danger" src="favicon.png" alt="logo">
+            <div class="container col-10 px-2 py-4 bg-light border rounded text-center shadow mt-md-1">
+              <div class="container d-lg-flex align-items-center text-left">
+                <img class="bg-danger" src="assets/favicon.png" alt="logo">
                 <h5 class="font-weight-bolder ml-3 mt-2">Start your day with our top 5 articles</h5>
               </div>
               <form class="row mx-3 mt-2">
@@ -355,8 +358,8 @@
           </div>
         </div>
         <div class="container bg-white col-8 text-center border-bottom mt-2 mt-md-4 pb-md-4">
-          <div class="container d-flex d-flex justify-content-center text-center">
-            <img class="bg-danger" src="favicon.png" alt="logo">
+          <div class="container d-flex justify-content-center text-center">
+            <img class="bg-danger" src="assets/favicon.png" alt="logo">
             <h5 class="font-weight-bolder ml-3 mt-2">IN THE MAGAZINE</h5>
           </div>
         </div>
@@ -431,13 +434,13 @@
       </div>
       <div class="container bg-white col-12 text-center border-bottom">
         <div class="container d-flex d-flex justify-content-center text-center">
-          <img class="bg-danger" src="favicon.png" alt="logo">
+          <img class="bg-danger" src="assets/favicon.png" alt="logo">
           <h5 class="font-weight-bolder ml-3 mt-2">EDITOR'S PICK</h5>
         </div>
       </div>
       <div class="editorpick container bg-white col-lg-12 mt-1 mb-4 border-bottom">
         <div class="row pt-4">
-          <div class="col-12 col-md-6 col-lg-3 col-xl-4 mt-4 mt-lg-2">
+          <div class="col-12 col-md-6 col-lg-3 mt-4 mt-lg-2">
             <div class="card border-0">
               <img class="card-img-top p-3" src="https://d.newsweek.com/en/full/1655499/st-patricks.webp?w=397&amp;h=265&amp;f=12bb1581281501a4c6c6eb35ad3281c5" alt="China Recovery">
               <div class="card-body pt-0">
@@ -446,7 +449,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-3 col-xl-4 mt-4 mt-lg-2">
+          <div class="col-12 col-md-6 col-lg-3 mt-4 mt-lg-2">
             <div class="card border-0">
               <img class="card-img-top p-3" src="https://d.newsweek.com/en/full/1655516/tiffany-trump.webp?w=397&amp;h=265&amp;f=6179a51cef54305195718a1218555b87" alt="China Recovery">
               <div class="card-body pt-0">
@@ -455,7 +458,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-3 col-xl-4 mt-4 mt-md-2 mt-lg-2">
+          <div class="col-12 col-md-6 col-lg-3 mt-4 mt-md-2 mt-lg-2">
             <div class="card border-0">
               <img class="card-img-top p-3" src="https://d.newsweek.com/en/full/1655413/trump.webp?w=397&amp;h=265&amp;f=b62f2d0664fc3f10795cd47742521525" alt="China Recovery">
               <div class="card-body pt-0">
@@ -464,7 +467,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-3 col-xl-4 mt-2">
+          <div class="col-12 col-md-6 col-lg-3 mt-2">
             <div class="card border-0">
               <img class="card-img-top p-3" src="https://d.newsweek.com/en/full/1641848/mark-zuckerberg.webp?w=397&amp;h=265&amp;l=50&amp;t=16&amp;f=265223e3dc6e2f4ebefbc73200d8f21e" alt="China Recovery">
               <div class="card-body pt-0">
@@ -473,7 +476,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-3 col-xl-4 mt-2">
+          <div class="col-12 col-md-6 col-lg-3 mt-2">
             <div class="card border-0">
               <img class="card-img-top p-3" src="https://d.newsweek.com/en/full/1655320/chicago-police-homicide-rate-midwest.webp?w=397&amp;h=265&amp;f=e0d8d97a438b934b116eed35b03b9f76" alt="China Recovery">
               <div class="card-body pt-0">
@@ -482,7 +485,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-3 col-xl-4 mt-2">
+          <div class="col-12 col-md-6 col-lg-3 mt-2">
             <div class="card border-0">
               <img class="card-img-top p-3" src="https://d.newsweek.com/en/full/1655188/trump-versus-biden.webp?w=397&amp;h=265&amp;f=1d7928e8bbd2475dde529a91df656092" alt="China Recovery">
               <div class="card-body pt-0">
@@ -491,7 +494,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-3 col-xl-4 mt-2">
+          <div class="col-12 col-md-6 col-lg-3 mt-2">
             <div class="card border-0">
               <img class="card-img-top p-3" src="https://d.newsweek.com/en/full/1655166/qanon-conspiracy-theorist-donald-trump-rally.webp?w=397&amp;h=265&amp;f=6cdfa777ca848c8fc04ecac353774420" alt="China Recovery">
               <div class="card-body pt-0">
@@ -500,7 +503,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-3 col-xl-4 mt-2">
+          <div class="col-12 col-md-6 col-lg-3 mt-2">
             <div class="card border-0">
               <img class="card-img-top p-3" src="https://d.newsweek.com/en/full/1655211/orionid-meteor-shower.webp?w=397&amp;h=265&amp;f=c1dbd5709881b6e24cda6327cc7b42cc" alt="China Recovery">
               <div class="card-body pt-0">
@@ -513,7 +516,7 @@
         <div class="us-section container bg-white col-lg-12 mt-2 mb-2 border-bottom">
           <h5 class="card-title text-danger font-weight-bolder p-xl-0 m-xl-0">U.S.</h5>
           <div class="row">
-            <div class="col-xl-4 col-lg-3 col-md-3 px-md-2 mt-4 pt-xl-0">
+            <div class="col-xl-4 col-lg-3 col-md-3 px-md-2 mt-1 mt-md-1 mt-lg-1 pt-xl-0">
               <div class="card border-0">
                 <img class="card-img-top px-xl-0 py-xl-0" src="https://d.newsweek.com/en/full/1655914/coronavirus-us.webp?w=397&amp;h=265&amp;f=84a0791253a16dbc0e21365f189945ee" alt="China Recovery">
                 <div class="card-body p-md-0 pt-xl-0 p-0">
@@ -521,7 +524,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-4 col-lg-3 col-md-3 px-md-2 mt-4 pt-xl-0">
+            <div class="col-xl-4 col-lg-3 col-md-3 px-md-2 mt-1 mt-md-1 mt-lg-1 pt-xl-0">
               <div class="card border-0">
                 <img class="card-img-top px-xl-0 py-xl-0" src="https://d.newsweek.com/en/full/1655756/trump-rally-carson-city-nevada-october-18.webp?w=397&amp;h=265&amp;f=9c30072a69fac7f72bc8136e78935fcb" alt="China Recovery">
                 <div class="card-body p-md-0 pt-xl-0 p-0">
@@ -529,7 +532,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-4 col-lg-6 col-md-6 px-md-2 mt-4 pt-xl-">
+            <div class="col-xl-4 col-lg-6 col-md-6 px-md-2 mt-1 mt-md-1 mt-lg-1 pt-xl-">
               <div class="d-flex flex-column">
                 <div class="card-horizontal px-xl-3 pt-0 border-bottom">
                   <div class="card-img-left"></div>
@@ -554,9 +557,9 @@
           </div>
         </div>
         <div class="us-section container bg-white col-lg-12 mt-2 mb-2 border-bottom">
-          <h5 class="card-title text-danger font-weight-bolder p-xl-0 m-xl-0">U.S.</h5>
+          <h5 class="card-title text-danger font-weight-bolder p-xl-0 m-xl-0">World</h5>
           <div class="row">
-            <div class="col-xl-4 col-lg-3 col-md-3 px-md-2 mt-4 pt-xl-0">
+            <div class="col-xl-4 col-lg-3 col-md-3 px-md-2 mt-1 mt-md-1 mt-lg-1 pt-xl-0">
               <div class="card border-0">
                 <img class="card-img-top px-xl-0 py-xl-0" src="https://d.newsweek.com/en/full/1655914/coronavirus-us.webp?w=397&amp;h=265&amp;f=84a0791253a16dbc0e21365f189945ee" alt="China Recovery">
                 <div class="card-body p-md-0 pt-xl-0 p-0">
@@ -564,7 +567,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-4 col-lg-3 col-md-3 px-md-2 mt-4 pt-xl-0">
+            <div class="col-xl-4 col-lg-3 col-md-3 px-md-2 mt-1 mt-md-1 mt-lg-1 pt-xl-0">
               <div class="card border-0">
                 <img class="card-img-top px-xl-0 py-xl-0" src="https://d.newsweek.com/en/full/1655756/trump-rally-carson-city-nevada-october-18.webp?w=397&amp;h=265&amp;f=9c30072a69fac7f72bc8136e78935fcb" alt="China Recovery">
                 <div class="card-body p-md-0 pt-xl-0 p-0">
@@ -572,7 +575,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-4 col-lg-6 col-md-6 px-md-2 mt-4 pt-xl-">
+            <div class="col-xl-4 col-lg-6 col-md-6 px-md-2 mt-1 mt-md-1 mt-lg-1 pt-xl-">
               <div class="d-flex flex-column">
                 <div class="card-horizontal px-xl-3 pt-0 border-bottom">
                   <div class="card-img-left"></div>
@@ -597,9 +600,9 @@
           </div>
         </div>
         <div class="us-section container bg-white col-lg-12 mt-2 mb-2 border-bottom">
-          <h5 class="card-title text-danger font-weight-bolder p-xl-0 m-xl-0">U.S.</h5>
+          <h5 class="card-title text-danger font-weight-bolder p-xl-0 m-xl-0">Business</h5>
           <div class="row">
-            <div class="col-xl-4 col-lg-3 col-md-3 px-md-2 mt-4 pt-xl-0">
+            <div class="col-xl-4 col-lg-3 col-md-3 px-md-2 mt-1 mt-md-1 mt-lg-1 pt-xl-0">
               <div class="card border-0">
                 <img class="card-img-top px-xl-0 py-xl-0" src="https://d.newsweek.com/en/full/1655914/coronavirus-us.webp?w=397&amp;h=265&amp;f=84a0791253a16dbc0e21365f189945ee" alt="China Recovery">
                 <div class="card-body p-md-0 pt-xl-0 p-0">
@@ -607,7 +610,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-4 col-lg-3 col-md-3 px-md-2 mt-4 pt-xl-0">
+            <div class="col-xl-4 col-lg-3 col-md-3 px-md-2 mt-1 mt-md-1 mt-lg-1 pt-xl-0">
               <div class="card border-0">
                 <img class="card-img-top px-xl-0 py-xl-0" src="https://d.newsweek.com/en/full/1655756/trump-rally-carson-city-nevada-october-18.webp?w=397&amp;h=265&amp;f=9c30072a69fac7f72bc8136e78935fcb" alt="China Recovery">
                 <div class="card-body p-md-0 pt-xl-0 p-0">
@@ -615,7 +618,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-4 col-lg-6 col-md-6 px-md-2 mt-4 pt-xl-">
+            <div class="col-xl-4 col-lg-6 col-md-6 px-md-2 mt-1 mt-md-1 mt-lg-1 pt-xl-">
               <div class="d-flex flex-column">
                 <div class="card-horizontal px-xl-3 border-bottom">
                   <div class="card-img-left"></div>
@@ -640,9 +643,9 @@
           </div>
         </div>
         <div class="us-section container bg-white col-lg-12 mt-2 mb-2 border-bottom">
-          <h5 class="card-title text-danger font-weight-bolder p-xl-0 m-xl-0">U.S.</h5>
+          <h5 class="card-title text-danger font-weight-bolder p-xl-0 m-xl-0">Tech & Science</h5>
           <div class="row">
-            <div class="col-xl-4 col-lg-3 col-md-3 px-md-2 mt-4 pt-xl-0">
+            <div class="col-xl-4 col-lg-3 col-md-3 px-md-2 mt-1 mt-md-1 mt-lg-1 pt-xl-0">
               <div class="card border-0">
                 <img class="card-img-top px-xl-0 py-xl-0" src="https://d.newsweek.com/en/full/1655914/coronavirus-us.webp?w=397&amp;h=265&amp;f=84a0791253a16dbc0e21365f189945ee" alt="China Recovery">
                 <div class="card-body p-md-0 pt-xl-0 p-0">
@@ -650,7 +653,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-4 col-lg-3 col-md-3 px-md-2 mt-4 pt-xl-0">
+            <div class="col-xl-4 col-lg-3 col-md-3 px-md-2 mt-1 mt-md-1 mt-lg-1 pt-xl-0">
               <div class="card border-0">
                 <img class="card-img-top px-xl-0 py-xl-0" src="https://d.newsweek.com/en/full/1655756/trump-rally-carson-city-nevada-october-18.webp?w=397&amp;h=265&amp;f=9c30072a69fac7f72bc8136e78935fcb" alt="China Recovery">
                 <div class="card-body p-md-0 pt-xl-0 p-0">
@@ -658,7 +661,50 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-4 col-lg-6 col-md-6 px-md-2 mt-4 pt-xl-">
+            <div class="col-xl-4 col-lg-6 col-md-6 px-md-2 mt-1 mt-md-1 mt-lg-1 pt-xl-">
+              <div class="d-flex flex-column">
+                <div class="card-horizontal px-xl-3 border-bottom">
+                  <div class="card-img-left"></div>
+                  <div class="card-body-right">
+                    <h6 class="card-title pl-xl-2 pl-md-2 pl-2 font-weight-bolder">Massive Stimulus Spending Is the Only Fix for Ailing Economy, Experts Say</h6>
+                  </div>
+                </div>
+                <div class="card-horizontal px-xl-3 py-xl-3 py-md-2 py-2 border-bottom">
+                  <div class="card-img-left"></div>
+                  <div class="card-body-right">
+                    <h6 class="card-title pl-xl-2 pl-md-2 pl-2 font-weight-bolder">Massive Stimulus Spending Is the Only Fix for Ailing Economy, Experts Say</h6>
+                  </div>
+                </div>
+                <div class="card-horizontal px-xl-3 py-md-2 py-2 py-xl-3">
+                  <div class="card-img-left"></div>
+                  <div class="card-body-right">
+                    <h6 class="card-title pl-xl-2 pl-md-2 pl-2 font-weight-bolder">Massive Stimulus Spending Is the Only Fix for Ailing Economy, Experts Say</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="us-section container bg-white col-lg-12 mt-2 mt-md-3 mt-lg-3 mb-2 border-bottom">
+          <h5 class="card-title text-danger font-weight-bolder p-xl-0 m-xl-0">Culture</h5>
+          <div class="row">
+            <div class="col-xl-4 col-lg-3 col-md-3 px-md-2 mt-1 mt-md-1 mt-lg-1 pt-xl-0">
+              <div class="card border-0">
+                <img class="card-img-top px-xl-0 py-xl-0" src="https://d.newsweek.com/en/full/1655914/coronavirus-us.webp?w=397&amp;h=265&amp;f=84a0791253a16dbc0e21365f189945ee" alt="China Recovery">
+                <div class="card-body p-md-0 pt-xl-0 p-0">
+                  <h5 class="card-title font-weight-bolder">Ohio Reports Record COVID Hospitalizations, While PA Sees Most Since June</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-3 col-md-3 px-md-2 mt-1 mt-md-1 mt-lg-1 pt-xl-0">
+              <div class="card border-0">
+                <img class="card-img-top px-xl-0 py-xl-0" src="https://d.newsweek.com/en/full/1655756/trump-rally-carson-city-nevada-october-18.webp?w=397&amp;h=265&amp;f=9c30072a69fac7f72bc8136e78935fcb" alt="China Recovery">
+                <div class="card-body p-md-0 pt-xl-0 p-0">
+                  <h5 class="card-title font-weight-bolder">Over 200 Protests Planned If Trump Attempts to Dispute Election Results</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6 px-md-2 mt-1 mt-md-1 mt-lg-1 pt-xl-">
               <div class="d-flex flex-column">
                 <div class="card-horizontal px-xl-3 border-bottom">
                   <div class="card-img-left"></div>
@@ -683,52 +729,9 @@
           </div>
         </div>
         <div class="us-section container bg-white col-lg-12 mt-2 mb-2 border-bottom">
-          <h5 class="card-title text-danger font-weight-bolder p-xl-0 m-xl-0">U.S.</h5>
+          <h5 class="card-title text-danger font-weight-bolder p-xl-0 m-xl-0">Sports</h5>
           <div class="row">
-            <div class="col-xl-4 col-lg-3 col-md-3 px-md-2 mt-4 pt-xl-0">
-              <div class="card border-0">
-                <img class="card-img-top px-xl-0 py-xl-0" src="https://d.newsweek.com/en/full/1655914/coronavirus-us.webp?w=397&amp;h=265&amp;f=84a0791253a16dbc0e21365f189945ee" alt="China Recovery">
-                <div class="card-body p-md-0 pt-xl-0 p-0">
-                  <h5 class="card-title font-weight-bolder">Ohio Reports Record COVID Hospitalizations, While PA Sees Most Since June</h5>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4 col-lg-3 col-md-3 px-md-2 mt-4 pt-xl-0">
-              <div class="card border-0">
-                <img class="card-img-top px-xl-0 py-xl-0" src="https://d.newsweek.com/en/full/1655756/trump-rally-carson-city-nevada-october-18.webp?w=397&amp;h=265&amp;f=9c30072a69fac7f72bc8136e78935fcb" alt="China Recovery">
-                <div class="card-body p-md-0 pt-xl-0 p-0">
-                  <h5 class="card-title font-weight-bolder">Over 200 Protests Planned If Trump Attempts to Dispute Election Results</h5>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-6 px-md-2 mt-4 pt-xl-">
-              <div class="d-flex flex-column">
-                <div class="card-horizontal px-xl-3 border-bottom">
-                  <div class="card-img-left"></div>
-                  <div class="card-body-right">
-                    <h6 class="card-title pl-xl-2 pl-md-2 pl-2 font-weight-bolder">Massive Stimulus Spending Is the Only Fix for Ailing Economy, Experts Say</h6>
-                  </div>
-                </div>
-                <div class="card-horizontal px-xl-3 py-xl-3 py-md-2 py-2 border-bottom">
-                  <div class="card-img-left"></div>
-                  <div class="card-body-right">
-                    <h6 class="card-title pl-xl-2 pl-md-2 pl-2 font-weight-bolder">Massive Stimulus Spending Is the Only Fix for Ailing Economy, Experts Say</h6>
-                  </div>
-                </div>
-                <div class="card-horizontal px-xl-3 py-md-2 py-2 py-xl-3">
-                  <div class="card-img-left"></div>
-                  <div class="card-body-right">
-                    <h6 class="card-title pl-xl-2 pl-md-2 pl-2 font-weight-bolder">Massive Stimulus Spending Is the Only Fix for Ailing Economy, Experts Say</h6>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="us-section container bg-white col-lg-12 mt-2 mb-2 border-bottom">
-          <h5 class="card-title text-danger font-weight-bolder p-xl-0 m-xl-0">U.S.</h5>
-          <div class="row">
-            <div class="col-xl-4 col-lg-3 col-md-3 px-md-2 mt-4 pt-xl-0">
+            <div class="col-xl-4 col-lg-3 col-md-3 px-md-2 mt-1 mt-md-1 mt-lg-1 pt-xl-0">
               <div class="card border-0">
                 <img class="card-img-top px-xl-0 py-xl-0" src="https://d.newsweek.com/en/full/1655914/coronavirus-us.webp?w=397&amp;h=265&amp;f=84a0791253a16dbc0e21365f189945ee" alt="China Recovery">
                 <div class="card-body p-md-0 pt-xl-0">
@@ -736,7 +739,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-4 col-lg-3 col-md-3 px-md-2 mt-4 pt-xl-0">
+            <div class="col-xl-4 col-lg-3 col-md-3 px-md-2 mt-1 mt-md-1 mt-lg-1 pt-xl-0">
               <div class="card border-0">
                 <img class="card-img-top px-xl-0 py-xl-0" src="https://d.newsweek.com/en/full/1655756/trump-rally-carson-city-nevada-october-18.webp?w=397&amp;h=265&amp;f=9c30072a69fac7f72bc8136e78935fcb" alt="China Recovery">
                 <div class="card-body p-md-0 pt-xl-0 p-0">
@@ -744,7 +747,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-4 col-lg-6 col-md-6 px-md-2 mt-4 pt-xl-">
+            <div class="col-xl-4 col-lg-6 col-md-6 px-md-2 mt-1 mt-md-1 mt-lg-1 pt-xl-">
               <div class="d-flex flex-column">
                 <div class="card-horizontal px-xl-3 border-bottom">
                   <div class="card-img-left"></div>
@@ -770,31 +773,38 @@
         </div>
         <div class="container bg-white col-12 col-lg-12 max-width p-0">
           <div class="row col-12 col-xl-12 bg-white m-0 p-0">
-            <div class="col-12 col-lg-6 p-0">
-              <div class="card mb-3 p-3 border-0 shadow">
-                <h5 class="card-title text-danger">SUBSCRIBE</h5>
-                <div class="row no-gutter">
-                  <div class="col-md-4"><img src="https://d.newsweek.com/en/full/1643943/cover-october-09-16-2020.jpg?w=170&amp;q=95&amp;f=f8144d83a028a40fe7ea6a5ed615ded7" class="card-img" alt="..."></div>
+            <div class="col-12 col-md-12 col-lg-8 px-2">
+              <h5 class="card-title text-danger pl-lg-2">SUBSCRIBE</h5>
+              <div class="card mb-3 p-2 border-0 bg-light">
+                <div class="row no-gutter p-lg-4">
+                  <div class="col-md-4 position-relative">
+                    <img src="https://d.newsweek.com/en/full/1643943/cover-october-09-16-2020.jpg?w=170&q=95&f=f8144d83a028a40fe7ea6a5ed615ded7" class="card-img item-top-img" alt="...">
+                    <img src="https://d.newsweek.com/en/full/1656193/cover-october-30-2020.jpg?w=170&q=95&f=be2e90c46dd8a717368f947b7d46d40f" class="card-img position-absolute bottom-overlapped" alt="...">
+                  </div>
                   <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">In-depth Stories You Don't See Elsewhere About Topics You Want to Read!</h5>
-                      <p class="card-text">All Access + Weekly Delivery. Choose A Membership That's Perfect for You!</p><a href="#" class="btn btn-danger rounded">SUBSCRIBE</a>
+                    <div class="card-body d-lg-flex flex-column justify-content-end">
+                      <h4 class="font-weight-bolder">In-depth Stories You Don't See Elsewhere About Topics You Want to Read!</h4>
+                      <p class="card-text">All Access + Weekly Delivery. Choose A Membership That's Perfect for You!</p><a href="#" class="btn btn-danger rounded col-lg-4">SUBSCRIBE</a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-12 p-0 col-lg-6">
-              <div class="card mb-3 p-3 pb-xl-2 border-0 shadow">
-                <h5 class="card-title text-danger">NEWSLETTER</h5>
+            <div class="col-12 col-md-12 col-lg-4">
+              <h5 class="card-title text-danger">NEWSLETTER</h5>
+              <div class="card p-3 pb-xl-2 border-0">
                 <div class="row no-gutter p-0 border-0">
-                  <div class="col-md-4 p-0"><img src="https://images.unsplash.com/photo-1581006573926-8553c3caebe3?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=675&amp;q=80" class="card-img p-0" alt="..."></div>
+                  <div class="col-md-4 newsletter-bg">
+                  </div>
                   <div class="col-md-8 p-2">
                     <div class="card-body">
                       <h5 class="card-title">The Starting 5</h5>
                       <p class="card-text">See why nearly a quarter of a million subscribers begin their day with the Starting 5.</p>
-                      <form class="">
-                        <input type="email" placeholder="Email Address" class="col-12"> <button type="button" class="btn-danger border-0 rounded col-12"><span class="text-black font-weight-bolder">FREE SIGN UP</span></button>
+                      <form>
+                        <input type="email" placeholder="Email Address" class="col-12">
+                        <button type="button" class="btn-danger border-0 rounded col-12 mt-lg-2">
+                          <span class="text-black font-weight-bolder">FREE SIGN UP</span>
+                        </button>
                       </form>
                     </div>
                   </div>
@@ -806,105 +816,106 @@
       </div>
     </main>
     <footer class="container-fluid col-xl-12 col-lg-12 col-xs-12 max-width min-width-container nav-static p-0 bg-white">
-      <div class="d-flex justify-content-space-evenly border-bottom pb-xl-0 logo-social">
+      <div class="d-flex d-md-flex d-lg-flex flex-column flex-md-row flex-lg-row justify-content-space-evenly border-bottom pb-xl-0 logo-social">
         <div class="col-xl-6 col-md-9">
-          <div class="d-flex logo-trademark">
+          <div class="d-flex flex-column flex-md-row flex-lg-row d-md-flex d-lg-flex logo-trademark pl-lg-2">
             <a class="navbar-brand footer-logo" href="https://www.newsweek.com/"><svg width="15em" height="3em" fill="red" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 395.6 60" xml:space="preserve">
             <g>
               <path class="st0" d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2 L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11 c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7 l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6 H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13 c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8 c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2 C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7 h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4 c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1 c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6 c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6 C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5 h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9 c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2 c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9 C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6 c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1 c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6 v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3 c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5 h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7"></path>
             </g></svg></a>
-            <p class="text-secondary trademark m-xl-2">© 2020 NEWSWEEK DIGITAL LLC</p>
+            <p class="text-secondary trademark align-self-md-end align-self-lg-end m-xl-2">© 2020 NEWSWEEK DIGITAL LLC</p>
           </div>
         </div>
-        <ul class="col-xl-6 col-md-3 footer-icons pt-xl-5 pt-md-4 d-flex justify-content-end">
+        <ul class="col-xl-6 col-md-3 footer-icons pt-xl-5 pt-md-4 d-flex d-md-flex d-lg-flex justifiy-content-start justify-content-md-end justify-content-lg-end">
           <li class="facebook">
-            <a href="#" class="text-secondary px-2 px-xl-2 px-md-2 px-lg-2">
+            <a href="#" class="text-secondary px-2 px-xl-2 px-md-2 px-lg-2 h5">
               <i class="fab fa-facebook-square"></i>
             </a>
           </li>
           <li>
-            <a href="#" class="twitter text-secondary px-2 px-xl-2 px-lg-2 px-md-2">
+            <a href="#" class="twitter text-secondary px-2 px-xl-2 px-lg-2 px-md-2 h5">
               <i class="fab fa-twitter"></i>
             </a>
           </li>
           <li>
-            <a href="#" class="instagram text-secondary px-2 px-xl-2 px-lg-2 px-md-2">
+            <a href="#" class="instagram text-secondary px-2 px-xl-2 px-lg-2 px-md-2 h5">
               <i class="fab fa-instagram"></i>
             </a>
           </li>
           <li>
-            <a href="#" class="tumblr text-secondary px-2 px-xl-2 px-lg-2 px-md-2">
+            <a href="#" class="tumblr text-secondary px-2 px-xl-2 px-lg-2 px-md-2 h5">
               <i class="fab fa-tumblr"></i>
             </a>
           </li>
           <li>
-            <a href="#" class="linkedin text-secondary px-2 px-xl-2 px-lg-2 px-md-2">
+            <a href="#" class="linkedin text-secondary px-2 px-xl-2 px-lg-2 px-md-2 h5">
               <i class="fab fa-linkedin-in"></i>
             </a>
           </li>
         </ul>
       </div>
-      <div class="editions d-flex pt-xl-2 pt-md-2">
+      <div class="editions d-flex pt-xl-2 pt-md-2 px-lg-2">
         <p class="pl-xl-3 pl-md-3 pl-3">Editions:</p>
         <ul class="d-flex pl-xl-2 pl-md-2 pl-2">
           <li>
-            <a class="text-secondary px-xl-2 px-md-2 px-1" href="#">U.S. Edition</a>
+            <a class="text-secondary px-xl-2 px-md-2 px-1 h5" href="#">U.S. Edition</a>
           </li>
           <li>
-            <a class="text-secondary px-xl-2 px-md-2 px-1 border-left" href="#">日本</a>
+            <a class="text-secondary px-xl-2 px-md-2 px-1 h5 border-left" href="#">日本</a>
           </li>
           <li>
-            <a class="text-secondary px-xl-2 px-md-2 px-1 border-left" href="#">Pakistan</a>
+            <a class="text-secondary px-xl-2 px-md-2 px-1 h5 border-left" href="#">Pakistan</a>
           </li>
           <li>
-            <a class="text-secondary px-xl-2 px-md-2 px-1 border-left" href="#">Polska</a>
+            <a class="text-secondary px-xl-2 px-md-2 px-1 h5 border-left" href="#">Polska</a>
           </li>
           <li>
-            <a class="text-secondary px-xl-2 px-md-2 px-1 border-left" href="#">România</a>
+            <a class="text-secondary px-xl-2 px-md-2 px-1 h5 border-left" href="#">România</a>
           </li>
         </ul>
       </div>
-      <nav class="navbar navbar-default navbar-expand bottom-footer-links pt-xl-2 px-md-0">
+      <nav class="navbar navbar-default navbar-expand bottom-footer-links pl-2 pt-xl-2 px-md-0 px-lg-2">
         <ul class="nav navbar-nav d-flex pl-xl-2 pl-md-2">
           <li class="nav-item">
             <a class="nav-link text-secondary px-xl-2 px-md-2" href="#">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-secondary px-xl-2 px-md-2 border-left" href="#">Corrections</a>
+            <a class="nav-link text-secondary px-xl-2 px-md-2" href="#">Corrections</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-secondary px-xl-2 px-md-2 border-left" href="#">Contact Us</a>
+            <a class="nav-link text-secondary px-xl-2 px-md-2" href="#">Contact Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-secondary px-xl-2 px-md-2 border-left text-wrap" href="#">Editorial Guidelines</a>
+            <a class="nav-link text-secondary px-xl-2 px-md-2" href="#">Editorial Guidelines</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-secondary px-xl-2 px-md-2 border-left" href="#">Advertise</a>
+            <a class="nav-link text-secondary px-xl-2 px-md-2" href="#">Advertise</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-secondary px-xl-2 px-md-2 border-left" href="#">Copyright</a>
+            <a class="nav-link text-secondary px-xl-2 px-md-2" href="#">Copyright</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-secondary px-xl-2 px-md-2 border-left" href="#">Terms & Conditions</a>
+            <a class="nav-link text-secondary px-xl-2 px-md-2" href="#">Terms & Conditions</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-secondary px-xl-2 px-md-2 border-left" href="#">Privacy Policy</a>
+            <a class="nav-link text-secondary px-xl-2 px-md-2" href="#">Privacy Policy</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-secondary px-xl-2 px-md-2 border-left" href="#">Cookie Policy</a>
+            <a class="nav-link text-secondary px-xl-2 px-md-2t" href="#">Cookie Policy</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-secondary px-xl-2 px-md-2 border-left" href="#">Terms of Sale</a>
+            <a class="nav-link text-secondary px-xl-2 px-md-2" href="#">Terms of Sale</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-secondary px-xl-2 px-md-2 border-left" href="#">Archive</a>
+            <a class="nav-link text-secondary px-xl-2 px-md-2" href="#">Archive</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-secondary px-xl-2 px-md-2 border-left" href="#">Announcements</a>
+            <a class="nav-link text-secondary px-xl-2 px-md-2" href="#">Announcements</a>
           </li>
         </ul>
       </nav>
     </footer>
   </div>
+  <script src="assets/js/animations.js"></script>
 </body>
 </html>

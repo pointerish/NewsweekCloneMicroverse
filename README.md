@@ -10,7 +10,7 @@ This is a responsive site and will scale as needed to different devices.
 
 This was done for learning purposes using Bootstrap.
 
-![desktop](newsweek-screenshot.png)
+![desktop](assets/newsweek-screenshot.png)
 
 ## Built With
 
@@ -27,7 +27,7 @@ This was done for learning purposes using Bootstrap.
 To run the code simply download the repository by either cloning it or 
 downloading it as Zip file. Then use the old trustable browser to open the HTML file.
 
-## Author (Actually, Cloner)
+## Author
 
 **Josias Alvarado**
 
@@ -49,4 +49,6 @@ This project is [MIT](./LICENSE) licensed.
 
 ## Acknowledgements
 
-Bootstrap is nice and the people who made it are nice too. 
+- [Microverse](https://microverse.org)
+- [Newsweek](https://newsweek.com)
+- [Bootstrap](https://getbootstrap.com/) and its creators
