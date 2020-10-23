@@ -135,7 +135,7 @@ h4.card-title:hover,
   font-size: 0.4rem;
 }
 
-.bg-image-newsletter {
+.bg-newsletter {
   background-image: url("https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&h=265&q=90&f=742bce9a6f72dd8f19ba2e7fd5db06e5");
   background-size: cover;
   background-position: center;
@@ -148,18 +148,6 @@ h4.card-title:hover,
   height: 100%;
   left: 3.4em;
   top: 1em;
-}
-
-.newsletter-bg {
-  background-image: url(https://images.unsplash.com/photo-1581006573926-8553c3caebe3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&afit=crop&w=675&q=80);
-  background-position: center center;
-  background-size: cover;
-}
-
-@media only screen and (min-device-width: 1200px) and (max-device-width: 1577px) {
-  .bottom-nav > ul > li > a {
-    padding: 0 0.5rem !important;
-  }
 }
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -236,5 +224,46 @@ h4.card-title:hover,
 
   .editions > ul > li > a {
     font-size: 0.9em;
+  }
+
+  .newsletter-img {
+    height: 30vh;
+    width: 100vw;
+    object-fit: cover;
+    object-position: bottom;
+  }
+}
+
+@media only screen and (min-device-width: 1200px) and (max-device-width: 1577px) {
+  .bottom-nav > ul > li > a {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1000px) {
+  .red-nav {
+    height: 50px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100vw;
+  }
+
+  .logo-link > a > img {
+    height: 35px;
+    margin-bottom: 1rem;
+  }
+
+  .login-subscribe {
+    height: 35px;
+    margin-bottom: 1.7rem;
+    margin-left: 10rem;
+  }
+
+  .burger-menu {
+    height: 25px;
+    margin-bottom: 2.2rem;
+    padding: 0;
   }
 }
