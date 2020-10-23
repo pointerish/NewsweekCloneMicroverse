@@ -19,7 +19,7 @@ li {
 
 .red-nav {
   background-color: red;
-  height: 122px;
+  height: 128px;
 }
 
 /* Cheaper to do this than having `font-weight-bolder` 30 times on the HTML */
@@ -96,10 +96,6 @@ h4.card-title:hover,
 
 .card-title {
   font-size: 1rem;
-}
-
-.card-title span {
-  display: inline-block;
 }
 
 .card-horizontal {
