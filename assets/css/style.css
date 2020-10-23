@@ -203,7 +203,7 @@ h4.card-title:hover,
   }
 
   .main-container {
-    width: 100vw;
+    width: 80vmax;
   }
 
   .bottom-nav,
@@ -239,6 +239,10 @@ h4.card-title:hover,
     margin: 0;
     padding: 0;
   }
+
+  .trademark {
+    font-size: 0.8em;
+  }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1000px) {
@@ -258,7 +262,6 @@ h4.card-title:hover,
   .login-subscribe {
     height: 35px;
     margin-bottom: 1.7rem;
-    margin-left: 10rem;
   }
 
   .burger-menu {
