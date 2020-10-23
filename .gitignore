@@ -3,5 +3,3 @@
 hint-report
 node_modules
 *.json
-.hintrc
-scss

@@ -147,7 +147,7 @@ h4.card-title:hover,
 }
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 573px) {
   :root {
     overflow-x: hidden;
     font-size: 14px;
@@ -227,17 +227,6 @@ h4.card-title:hover,
     width: 100vw;
     object-fit: cover;
     object-position: bottom;
-  }
-}
-
-@media only screen and (min-device-width: 1200px) and (max-device-width: 1577px) {
-  .bottom-nav > ul > li > a {
-    margin: 0;
-    padding: 0;
-  }
-
-  .trademark {
-    font-size: 0.8em;
   }
 }
 
