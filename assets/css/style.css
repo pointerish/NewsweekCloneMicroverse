@@ -35,6 +35,12 @@ li {
   letter-spacing: 0.1rem;
 }
 
+.logo-link > a > svg {
+  width: 60em;
+  height: 40em;
+  fill: white;
+}
+
 .login-subscribe button {
   color: black;
   letter-spacing: 0;
@@ -253,5 +259,11 @@ h4.card-title:hover,
     height: 25px;
     margin-bottom: 2.2rem;
     padding: 0;
+  }
+}
+
+@media only screen and (min-device-width: 1199px) and (max-device-width: 1300px) {
+  .main-container {
+    width: 100%;
   }
 }
