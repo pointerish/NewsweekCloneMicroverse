@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed");
+
+:root {
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  overflow-x: hidden;
+}
+
+:root body.main-container {
+  width: 100vw;
+}
+
+li {
+  list-style-type: none;
+}
+
+.red-nav {
+  background-color: red;
+  height: 128px;
+}
+
+/* Cheaper to do this than having `font-weight-bolder` 30 times on the HTML */
+.nav-link {
+  font-weight: bolder;
+}
+
+.login-subscribe a,
+.login-subscribe button {
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+  letter-spacing: 0.1rem;
+}
+
+.logo-link > a > svg {
+  width: 60em;
+  height: 40em;
+  fill: white;
+}
+
+.login-subscribe button {
+  color: black;
+  letter-spacing: 0;
+}
+
+.search-nav > input {
+  border: none;
+  display: inline-block;
+  width: 50%;
+}
+
+.red-hover:hover {
+  color: red;
+}
+
+.search-nav > input:focus {
+  outline: none;
+}
+
+.search-nav::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: " ";
+  display: block;
+  width: 5%;
+  background-color: #f72210;
+  border-left: 12px solid #f8f9fa;
+  border-top: 13px solid #f72210;
+}
+
+.user-icon > i {
+  font-size: 5rem;
+}
+
+.main-container {
+  width: 100%;
+  padding: 0;
+  background-color: white;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+h4.card-title:hover,
+.card-body > h5:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+.card-img-left {
+  background-image: url("https://d.newsweek.com/en/full/1654970/mnuchin.webp?w=790&f=e084f7792793750e01514706215dd25a");
+  background-size: cover;
+  background-position: center center;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.card-title {
+  font-size: 1rem;
+}
+
+.card-horizontal {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+.card-custom {
+  display: grid;
+  grid-template-areas: "card-img-top" "card-body";
+}
+
+.card-custom > div > p {
+  color: grey;
+  font-size: 0.9rem;
+}
+
+.border-bottom-title {
+  border-bottom: 2px solid grey;
+  display: block;
+  padding-bottom: 0.3rem;
+}
+
+.card-title-ms {
+  font-size: 0.5em;
+}
+
+.hover-red:hover {
+  color: red;
+}
+
+.card-text-ms {
+  font-size: 0.4rem;
+}
+
+.bg-newsletter {
+  background-image: url("https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&h=265&q=90&f=742bce9a6f72dd8f19ba2e7fd5db06e5");
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.bottom-overlapped {
+  width: 80%;
+  height: 100%;
+  left: 3.4em;
+  top: 1em;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 573px) {
+  :root {
+    overflow-x: hidden;
+    font-size: 14px;
+  }
+
+  nav.red-nav {
+    height: 15vw;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+  }
+
+  .logo-link {
+    width: 40%;
+    margin-bottom: 1rem;
+  }
+
+  #newsweek-logo {
+    width: 100%;
+    height: 100%;
+    padding-left: 0;
+  }
+
+  .user-icon > svg {
+    width: 1.5em;
+    height: 1.7em;
+    margin-bottom: 0.8em;
+    color: white;
+  }
+
+  .login-subscribe {
+    width: 30%;
+  }
+
+  .login-subscribe > a {
+    display: none;
+  }
+
+  .login-subscribe > button {
+    font-size: 0.8em;
+    margin-bottom: 1em;
+  }
+
+  .burger-menu > svg {
+    width: 2em;
+    height: 2em;
+    margin-bottom: 0.6em;
+    color: white;
+  }
+
+  .main-container {
+    width: 80vmax;
+  }
+
+  .bottom-nav,
+  .trending,
+  .weather-date {
+    display: none;
+  }
+
+  .footer-logo > svg {
+    width: 12em;
+    height: 3em;
+  }
+
+  .trademark {
+    align-self: start;
+    font-size: 0.9em;
+  }
+
+  .editions > ul > li > a {
+    font-size: 0.9em;
+  }
+
+  .newsletter-img {
+    height: 30vh;
+    width: 100vw;
+    object-fit: cover;
+    object-position: bottom;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1000px) {
+  .red-nav {
+    height: 50px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100vw;
+  }
+
+  .logo-link > a > img {
+    height: 35px;
+    margin-bottom: 1rem;
+  }
+
+  .login-subscribe {
+    height: 35px;
+    margin-bottom: 1.7rem;
+  }
+
+  .burger-menu {
+    height: 25px;
+    margin-bottom: 2.2rem;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-device-width: 1199px) and (max-device-width: 1300px) {
+  .main-container {
+    width: 100%;
+  }
+}

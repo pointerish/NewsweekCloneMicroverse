@@ -1,0 +1,5 @@
+.vscode
+*.map
+hint-report
+node_modules
+*.json
